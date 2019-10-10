@@ -1,0 +1,123 @@
+@import 'config';
+
+* {
+  font-size: 0;
+}
+
+body {
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.5;
+
+  header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($grey-color, $background-opacity);
+    z-index: 1;
+    display: block;
+
+    nav ul li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+
+        &:hover {
+          transition: all 0.5s ease;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  
+  section {
+    min-height: 100%;
+
+    img#slideshow {
+      width: 90vw;
+      max-height: 60vh;
+      object-fit: contain;
+      filter: drop-shadow(0px 0px 1px rgba(0,0,0,.7))
+      drop-shadow(0px 0px 10px rgba(0,0,0,.7));
+    }
+
+    img#arrow {
+      width: 30px;
+      position: absolute;
+      bottom: 10px;
+    }
+
+    &#home {
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    &#food {
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    &#drink {
+      top: 0;
+      left: 0;
+    }
+
+    &#contact {
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+  .overlay {
+    vertical-align: top;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed; // Image position does not move even when scrolled
+    background-position: 50%, 50%; // Uses the center of the image
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home {
+    background-image: $home;
+  }
+
+  .food {
+
+  }
+
+  .drink {
+    background-image: linear-gradient(rgba($primary-color, 0.5), rgba($primary-color, 0.5)), $drink;
+  }
+
+  .contact {
+    background-image: linear-gradient(rgba($grey-color, 0.5), rgba($grey-color, 0.5)), $contact;
+  }
+
+  h1 {
+    font-size: 32px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+}
