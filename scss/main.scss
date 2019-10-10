@@ -13,13 +13,15 @@ body {
   font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
   line-height: 1.5;
 
+  // Navigation Bar
+
   header {
     width: 100%;
     height: 40px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($grey-color, $background-opacity);
+    background-color: $grey-color;
     z-index: 1;
     display: block;
 
@@ -40,22 +42,12 @@ body {
     }
   }
   
+  // Section Manipulation
+
   section {
     min-height: 100%;
 
-    img#slideshow {
-      width: 90vw;
-      max-height: 60vh;
-      object-fit: contain;
-      filter: drop-shadow(0px 0px 1px rgba(0,0,0,.7))
-      drop-shadow(0px 0px 10px rgba(0,0,0,.7));
-    }
-
-    img#arrow {
-      width: 30px;
-      position: absolute;
-      bottom: 10px;
-    }
+    // Home
 
     &#home {
       top: 0;
@@ -64,6 +56,22 @@ body {
       width: 100vw;
     }
 
+    // img#slideshow {
+    //   width: 90vw;
+    //   max-height: 60vh;
+    //   object-fit: contain;
+    //   filter: drop-shadow(0px 0px 1px rgba(0,0,0,.7))
+    //   drop-shadow(0px 0px 10px rgba(0,0,0,.7));
+    // }
+
+    img#arrow {
+      width: 30px;
+      position: absolute;
+      bottom: 10px;
+    }
+
+    // Food
+
     &#food {
       top: 0;
       left: 0;
@@ -71,10 +79,14 @@ body {
       width: 100vw;
     }
 
+    // Drink
+
     &#drink {
       top: 0;
       left: 0;
     }
+
+    // Contact
 
     &#contact {
       top: 0;
@@ -84,15 +96,14 @@ body {
     }
   }
 
+  // Background Image Manipulation
+
   .overlay {
     vertical-align: top;
     position: relative;
     background-size: cover;
     background-attachment: fixed; // Image position does not move even when scrolled
     background-position: 50%, 50%; // Uses the center of the image
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .home {
@@ -104,16 +115,32 @@ body {
   }
 
   .drink {
-    background-image: linear-gradient(rgba($primary-color, 0.5), rgba($primary-color, 0.5)), $drink;
+    background-image: linear-gradient(rgba($primary-color, $background-opacity), rgba($primary-color, $background-opacity)), $drink;
   }
 
   .contact {
-    background-image: linear-gradient(rgba($grey-color, 0.5), rgba($grey-color, 0.5)), $contact;
+    background-image: linear-gradient(rgba($grey-color, $background-opacity), rgba($grey-color, $background-opacity)), $contact;
   }
 
+  // Font Manipulation
+
   h1 {
-    font-size: 32px;
+    font-size: 48px;
     color: #fff;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    background-color: rgba($grey-color, $background-opacity);
+
+  }
+
+  h2 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    background-color: rgba($grey-color, $background-opacity);
   }
 
   p {
