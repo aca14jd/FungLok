@@ -1,7 +1,7 @@
 // Menu Button
 
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 30px;
   top: 30px;
@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-text-color($grey-color);
+    background: #000;
     @include ease0ut;
   }
 
@@ -53,12 +53,8 @@
 
   &-nav {
     display: flex;
-    flex-flow: column wrap; //puts the links in columns
     align-items: center; // centers items vertically
     justify-content: center;
-    float: left;
-    width: 100%;
-    height: 100vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -90,13 +86,13 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 500;
     color: set-text-color($grey-color);
     text-decoration: none;
     @include ease0ut;
 
     &:hover {
-      color: $secondary-color;
+      color: $third-color;
     }
   }
 }
@@ -105,25 +101,5 @@
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
-  }
-}
-
-// Navigation Bar
-
-header {
-  nav ul li {
-    display: inline-block;
-
-    a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 24px;
-
-      &:hover {
-        @include ease0ut;
-        color: $primary-color;
-      }
-    }
   }
 }
