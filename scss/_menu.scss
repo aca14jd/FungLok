@@ -60,7 +60,7 @@
     padding: 0;
     background: rgba(
       darken($grey-color, $background-opacity),
-      $background-opacity
+      0.9
     ); //darkens primary color
     list-style: none; //gets rid of bullet points on links
     transform: translate3d(0, -100%, 0);
