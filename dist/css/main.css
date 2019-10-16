@@ -121,8 +121,7 @@ body {
     body section#food {
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh; }
+      width: 100vw; }
       body section#food h3 {
         font-size: 36px;
         color: #fff;
@@ -148,10 +147,12 @@ body {
           transition: all 0.5s ease;
           cursor: pointer; }
       body section#food #product-list {
-        width: 100%;
         display: grid;
         text-align: left;
         margin: 10px 10px 10px 30px; }
+        body section#food #product-list .price-right {
+          text-align: right;
+          margin-right: 20px; }
       body section#food h4 {
         margin: 0; }
     body section#drink {
