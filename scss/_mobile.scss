@@ -15,7 +15,7 @@
   }
 
   #product-list {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   #product-list {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -57,7 +57,7 @@
   }
 
   #product-list {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -78,6 +78,6 @@
   }
 
   #product-list {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
   }
 }

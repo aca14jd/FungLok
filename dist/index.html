@@ -1,73 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Fung Lok | Chinese & Vietnamese Restaurant</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Fung Lok | Chinese & Vietnamese Restaurant</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
+        <li class="nav-item"><a href="#drink" class="nav-link">Drinks</a></li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="overlay home">
+    <br />
+    <h1>Fung Lok</h1>
+    <h2>Chinese & Vietnamese Restaurant</h2>
+    <a href="#food" id="arrow"><img src="../dist/img/down-arrow.png" /></a>
+    <!-- <img src="/dist/img/picture.jpg" alt="" id="slideshow"> -->
+  </section>
+
+  <!-- Food -->
+  <section id="food" class="overlay food">
+    <h3>Menu</h3>
+    <div class="product-bar">
+      <button class="category" id="veg">Vegetarian</button>
+      <button class="category" id="starters">Starters</button>
+      <button class="category" id="mains">Main Dishes</button>
+      <button class="category" id="sides">Side Portions</button>
+    </div>
+    <ul id="product-list">
+      <!-- Vegetarian -->
+      <div class="veg-item">
+        <h4>Vegetarian Starters</h4>
+        <div class="product-grid">
+          <li>1.</li>
+          <li>Vegetarian Spring Rolls</li>
+          <li class="right">£3.50</li>
+          <li>2.</li>
+          <li>Crispy Seaweed</li>
+          <li class="right">£3.50</li>
+          <li>3.</li>
+          <li>Vegetable Hot & Sour Soup</li>
+          <li class="right">£2.50</li>
+          <li>4.</li>
+          <li>Mixed Vegetable Soup</li>
+          <li class="right">£2.50</li>
+          <li>5.</li>
+          <li>Sweetcorn Soup</li>
+          <li class="right">£2.50</li>
+        </div>
       </div>
-      <nav class="menu">
-        <ul class="menu-nav">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
-          <li class="nav-item"><a href="#drink" class="nav-link">Drinks</a></li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Home -->
-    <section id="home" class="overlay home">
-      <br />
-      <h1>Fung Lok</h1>
-      <h2>Chinese & Vietnamese Restaurant</h2>
-      <a href="#food" id="arrow"><img src="../dist/img/down-arrow.png"/></a>
-      <!-- <img src="/dist/img/picture.jpg" alt="" id="slideshow"> -->
-    </section>
-
-    <!-- Food -->
-    <section id="food" class="overlay food">
-      <h3>Menu</h3>
-      <div class="product-bar">
-        <button class="category" id="veg">Vegetarian</button>
-        <button class="category" id="starters">Starters</button>
-        <button class="category" id="mains">Main Dishes</button>
-        <button class="category" id="sides">Side Portions</button>
+      <div class="veg-item">
+        <h4>Vegetarian Main Courses</h4>
+        <div class="product-grid">
+          <li>6.</li>
+          <li>Braised Chinese Vegetables and Chinese Mushrooms in Oyster Sauce</li>
+          <li class="right">£6.00</li>
+          <li>7.</li>
+          <li>Deep Fried Bean Curd with Vegetables and Chinese Mushrooms</li>
+          <li class="right">£6.00</li>
+          <li>8.</li>
+          <li>Stir Fried Mixed Vegetables with Garlic or Oyster Sauce</li>
+          <li class="right">£6.00</li>
+          <li>9.</li>
+          <li>Fried Vegetables with Cashewnuts <span class="nut">(N)</span></li>
+          <li class="right">£6.50</li>
+          <li>10.</li>
+          <li>Fried Vegetables in Garlic & Chilli Sauce</li>
+          <li class="right">£6.00</li>
+          <li>11.</li>
+          <li>Braised Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
+          <li class="right">£6.00</li>
+          <li>12.</li>
+          <li>Deep Fried Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
+          <li class="right">£6.00</li>
+          <li>13.</li>
+          <li>Stir Fried Bamboo Shoots & Water Chestnuts in Hot Bean Sauce <span class="nut">(N)</span></li>
+          <li class="right">£6.00</li>
+          <li>14.</li>
+          <li>Stir Fried Beancurd in Kindo Sauce <span class="nut">(N)</span></li>
+          <li class="right">£6.00</li>
+          <li>15.</li>
+          <li>Deep Fried Salt & Peppered Bean Curd</li>
+          <li class="right">£6.00</li>
+          <li>16.</li>
+          <li>Vegetarian Singapore Vermicelli <span class="spicy">(Spicy)</span></li>
+          <li class="right">£6.50</li>
+          <li>17.</li>
+          <li>Vegetable Chow Mein or Ho Fan</li>
+          <li class="right">£6.00</li>
+        </div>
       </div>
-      <ul id="product-list"></ul>
-    </section>
+      <!-- Starter -->
+      <div class="starter-item">
+        <h4>Soup</h4>
+        <div class="product-grid">
+          <li>18.</li>
+          <li>Chicken & Sweetcorn Soup</li>
+          <li class="right">£2.50</li>
+          <li>19.</li>
+          <li>Crab & Sweetcorn Soup</li>
+          <li class="right">£2.50</li>
+          <li>20.</li>
+          <li>Hot & Sour Soup</li>
+          <li class="right">£2.50</li>
+          <li>21.</li>
+          <li>Chicken & Mushroom Soup</li>
+          <li class="right">£2.50</li>
+          <li>22.</li>
+          <li>West Lake Soup <strong>(Minced Beef & Tomatoes)</strong></li>
+          <li class="right">£2.50</li>
+          <li>23.</li>
+          <li>Wanton Soup <strong>(Pork & King Prawn Dumpling)</strong></li>
+          <li class="right">£4.50</li>
+          <li>24.</li>
+          <li>Char Sui & Wanton Soup</li>
+          <li class="right">£5.50</li>
+          <li>25.</li>
+          <li>Wanton Noodle or Ho Fan Soup</li>
+          <li class="right">£5.50</li>
+          <li>26.</li>
+          <li>Char Sui & Wanton Noodle Soup</li>
+          <li class="right">£6.50</li>
+          <li>27.</li>
+          <li>Char Sui & Roast Duck Noodle Soup</li>
+          <li class="right">£6.50</li>
+          <li>28.</li>
+          <li>Seafood Soup</li>
+          <li class="right">£5.50</li>
+          <li>29.</li>
+          <li>Hot & Sour Seafood Soup <strong>(Vietnamese style)</strong></li>
+          <li class="right">£5.50</li>
+          <li>30.</li>
+          <li>Chicken or Beef with Rice Noodle Soup <strong>(Vietnamese style)</strong></li>
+          <li class="right">£5.50</li>
+          <li>31.</li>
+          <li>Chicken Noodle Soup</li>
+          <li class="right">£5.50</li>
+        </div>
+      </div>
+      <div class="starter-item">
+        <h4>Appetisers</h4>
+        <div class="product-grid">
+          <li>33.</li>
+          <li>Hot Combination <span class="red">(Min 2 persons 7 per head)</span> <strong>(Barbecued Ribs, Vietnamese
+              Style Spring Rolls,
+              Skewered
+              Chicken on Skewer <span class="nut">(N)</span>, Sesame Seed Prawn on Toast)</strong></li>
+          <li class="right">£14.50</li>
+          <li>34.</li>
+          <li>Dim Sum Combination <span class="red">(Min 2 persons 6 per head)</span> <strong>(Sui Mai, Ha Gau, Crispy
+              Wantons, Spring Rolls)</strong></li>
+          <li class="right">£12.00</li>
+          <li>35.</li>
+          <li>Quarter Crispy Duck <strong>(served with Pancakes, Trimmings)</strong></li>
+          <li class="right">£7.00</li>
+          <li>36.</li>
+          <li>BBQ, Kindo <span class="nut">(N)</span> or Salt & Pepper Ribs</li>
+          <li class="right">£6.30</li>
+          <li>37.</li>
+          <li>Salt & Pepper Chicken Wings</li>
+          <li class="right">£6.30</li>
+          <li>39.</li>
+          <li>Sesame Prawn on Toast</li>
+          <li class="right">£4.50</li>
+          <li>41.</li>
+          <li>Crispy Wantons with Sweet & Sour Sauce</li>
+          <li class="right">£4.50</li>
+          <li>42.</li>
+          <li>Sui Mai <strong>(4)</strong></li>
+          <li class="right">£3.00</li>
+          <li>43.</li>
+          <li>Salt & Pepper Sui Mai <strong>(4)</strong></li>
+          <li class="right">£3.50</li>
+          <li>44.</li>
+          <li>Ha Gau <strong>(4)</strong></li>
+          <li class="right">£3.00</li>
+          <li>45.</li>
+          <li>Skewered Chicken in Satay <span class="nut">(N)</span> or Blackbean Sauce <strong>(2)</strong></li>
+          <li class="right">£5.00</li>
+          <li>46.</li>
+          <li>Skewered Seafood Mix in Satay <span class="nut">(N)</span> or Blackbean Sauce <strong>(2)</strong></li>
+          <li class="right">£12.00</li>
+          <li>47.</li>
+          <li>Crispy King Prawn Spring Rolls</li>
+          <li class="right">£3.80</li>
+          <li>48.</li>
+          <li>Vietnamese Spring Rolls</li>
+          <li class="right">£3.50</li>
+          <li>49.</li>
+          <li>Grilled Peking Dumplings <strong>(4)</strong></li>
+          <li class="right">£3.80</li>
+          <li>50.</li>
+          <li>Prawn Cocktail</li>
+          <li class="right">£4.00</li>
+          <li>51.</li>
+          <li>Curry Samosas <strong>(4)</strong></li>
+          <li class="right">£3.50</li>
+          <li>52.</li>
+          <li>Char Sui Buns <strong>(2)</strong></li>
+          <li class="right">£3.00</li>
+        </div>
+      </div>
+    </ul>
+  </section>
 
-    <!-- Drinks -->
-    <section id="drink" class="overlay drink">
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, hic
-        veniam atque, vitae fuga, quisquam aut maiores delectus error eveniet
-        iste provident ut sed? Fugiat neque doloremque minus ipsam distinctio.
-      </p>
-      <br />
-    </section>
+  <!-- Drinks -->
+  <section id="drink" class="overlay drink">
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, hic
+      veniam atque, vitae fuga, quisquam aut maiores delectus error eveniet
+      iste provident ut sed? Fugiat neque doloremque minus ipsam distinctio.
+    </p>
+    <br />
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="overlay contact">
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, hic
-        veniam atque, vitae fuga, quisquam aut maiores delectus error eveniet
-        iste provident ut sed? Fugiat neque doloremque minus ipsam distinctio.
-      </p>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="overlay contact">
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, hic
+      veniam atque, vitae fuga, quisquam aut maiores delectus error eveniet
+      iste provident ut sed? Fugiat neque doloremque minus ipsam distinctio.
+    </p>
+  </section>
+  <footer>Website designed and created by Jason Diep</footer>
 
-    <script src="js/eventhandlers.js"></script>
-  </body>
+  <script src="js/eventhandlers.js"></script>
+</body>
+
 </html>
