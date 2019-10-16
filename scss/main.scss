@@ -122,7 +122,12 @@ body {
 
         h4 {
           font-size: 20px;
-          margin: 10px 0px 10px 0px;
+          margin: 20px 0px 10px 0px;
+        }
+
+        h5 {
+          margin: 0px 0px 20px 0px;
+          color: red;
         }
 
         li {
@@ -144,21 +149,49 @@ body {
           display: grid;
         }
 
-        .veg-item {
+        .veg-item, .starter-item, .main-item, .side-item {
           display: none;
         }
 
-        .starter-item {
-          display: none;
+        // Menu Grid
+
+        .grid-a {
+          grid-area: a;
         }
 
-        .main-item {
-          display: none;
+        .grid-b {
+          grid-area: b;
         }
 
-        .side-item {
-          display: none;
+        .grid-c {
+          grid-area: c;
         }
+
+        .grid-d {
+          grid-area: d;
+        }
+
+        .grid-e {
+          grid-area: e;
+        }
+
+        .grid-f {
+          grid-area: f;
+        }
+
+        .grid-g {
+          grid-area: g;
+        }
+
+        .grid-h {
+          grid-area: h;
+        }
+
+        .grid-i {
+          grid-area: i;
+        }
+
+        // Menu Span
 
         .red {
           color: Red;
@@ -197,7 +230,7 @@ body {
   // Footer
 
   footer {
-    font-size: 16px;
+    font-size: 12px;
     background: $grey-color;
   }
 
