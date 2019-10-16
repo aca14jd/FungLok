@@ -71,9 +71,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-* {
-  font-size: 0; }
-
 html {
   scroll-behavior: smooth; }
 
@@ -136,13 +133,6 @@ body {
         width: 100%;
         display: grid;
         background-color: rgba(61, 61, 61, 0.5); }
-      body section#food .dropdown {
-        display: flex;
-        justify-content: center; }
-        body section#food .dropdown:hover .product-content {
-          display: block; }
-        body section#food .dropdown:hover .category {
-          color: #4d79ff; }
       body section#food .category {
         border: none;
         padding: 0;
@@ -153,24 +143,10 @@ body {
         margin: 0px 10px 0px 10px;
         padding: 5px 5px 5px 5px;
         background-color: transparent; }
-      body section#food .product-content {
-        display: none;
-        position: absolute;
-        margin-top: 47px; }
-      body section#food .product-category {
-        font-weight: 300;
-        font-size: 28px;
-        color: #fff;
-        display: block;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px 10px 0px 10px;
-        text-transform: uppercase;
-        background-color: rgba(61, 61, 61, 0.9);
-        cursor: pointer; }
-        body section#food .product-category:hover {
+        body section#food .category:hover {
           color: #4d79ff;
-          transition: all 0.5s ease; }
+          transition: all 0.5s ease;
+          cursor: pointer; }
     body section#drink {
       top: 0;
       left: 0; }

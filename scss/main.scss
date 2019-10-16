@@ -1,10 +1,6 @@
 @import "config";
 @import "menu";
 
-* {
-  font-size: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -102,19 +98,6 @@ body {
         background-color: rgba($grey-color, $background-opacity);
       }
 
-      .dropdown {
-        display: flex;
-        justify-content: center;
-
-        &:hover .product-content {
-          display: block;
-        }
-
-        &:hover .category {
-          color: $primary-color;
-        }
-      }
-
       .category {
         border: none;
         padding: 0;
@@ -125,31 +108,11 @@ body {
         margin: 0px 10px 0px 10px;
         padding: 5px 5px 5px 5px;
         background-color: transparent;
-      }
-
-      .product-content {
-        display: none;
-        position: absolute;
-        margin-top: 47px;
-        //align-content: center;
-      }
-
-      .product-category {
-        font-weight: 300;
-        font-size: 28px;
-        color: #fff;
-        //align-content: center;
-        display: block;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px 10px 0px 10px;
-        text-transform: uppercase;
-        background-color: rgba($grey-color, 0.9);
-        cursor: pointer;
 
         &:hover {
           color: $primary-color;
           @include ease0ut;
+          cursor: pointer;
         }
       }
     }
