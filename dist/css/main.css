@@ -147,6 +147,13 @@ body {
           color: #4d79ff;
           transition: all 0.5s ease;
           cursor: pointer; }
+      body section#food #product-list {
+        width: 100%;
+        display: grid;
+        text-align: left;
+        margin: 10px 10px 10px 30px; }
+      body section#food h4 {
+        margin: 0; }
     body section#drink {
       top: 0;
       left: 0; }
@@ -171,6 +178,8 @@ body {
     font-size: 16px; }
   body ul {
     padding-left: 0; }
+  body li {
+    list-style-type: none; }
 
 @media screen and (min-width: 1171px) {
   .menu-nav {
@@ -181,6 +190,8 @@ body {
     margin-left: 5vw;
     margin-right: 5vw; }
   .product-bar {
+    grid-template-columns: auto auto auto auto; }
+  #product-list {
     grid-template-columns: auto auto auto auto; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -192,7 +203,9 @@ body {
     margin-left: 5vw;
     margin-right: 5vw; }
   .product-bar {
-    grid-template-columns: auto auto auto; } }
+    grid-template-columns: auto auto auto; }
+  #product-list {
+    grid-template-columns: auto auto auto auto; } }
 
 @media screen and (max-width: 768px) {
   .menu-nav {
@@ -203,6 +216,8 @@ body {
     margin-top: 5vh;
     margin-bottom: 5vh; }
   .product-bar {
+    grid-template-columns: auto auto; }
+  #product-list {
     grid-template-columns: auto auto; } }
 
 @media screen and (max-width: 500px) {
@@ -214,4 +229,6 @@ body {
     margin-top: 5vh;
     margin-bottom: 5vh; }
   .product-bar {
-    grid-template-columns: auto; } }
+    grid-template-columns: auto; }
+  #product-list {
+    grid-template-columns: auto auto; } }

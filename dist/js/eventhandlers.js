@@ -22,42 +22,34 @@ function toggleMenu() {
 
 // Product Bar
 
-const vegBtn = document.querySelector("#veg");
-
-vegBtn.addEventListener("click", createMenuItems(vegStarter));
-vegBtn.addEventListener("click", createMenuItemPrices(vegStarterPrices));
+document.getElementById("veg").onclick = function() {
+  insertMenuText(vegStarterDishes);
+  insertPricesText(vegStarterPrices);
+};
 
 var menuItems, menuItemPrices;
-var vegStarter = [
-  "1. Vegetarian Spring Rolls",
-  "2. Crispy Seaweed",
-  "3. Vegetable Hot & Sour Soup",
-  "4. Mixed Vegetable Soup",
-  "5. Sweetcorn Soup"
-];
-var vegStarterPrices = ["", "£3.50", "$3.50", "£2.50", "£2.50", "£2.50"];
+var vegStarterDishes =
+  "<div><h4>Vegetarian Starters</h4><li>1. Vegetarian Spring Rolls</li><li>2. Crispy Seaweed</li><li>3. Vegetable Hot & Sour Soup</li><li>4. Mixed Vegetable Soup</li><li>5. Sweetcorn Soup</li></div>";
+var vegStarterPrices =
+  "<div><li>-----</li><li>£3.50</li><li>£3.50</li><li>£2.50</li><li>£2.50</li><li>£2.50</li></div>";
 
-function createMenuItems(value) {
-  menuItems.length = 0;
+function insertMenuText(value) {
   menuItems = value;
-  menuItems[0] = "<h3>" + menuItems[0] + "</h3>";
-  for (i = 1; i < menuItems.length; i++) {
-    menuItems += "<li>" + menuItems[i] + "</li>";
-  }
-  //something.forEach(createMenuList);
-  menuItems = "<ul>" + menuItems + "</ul>";
-}
-
-function createMenuItemPrices(value) {
-  menuItemPrices.length = 0;
-  menuItemPrices = value;
-  for (i = 0; i < menuItemPrices.length; i++) {
-    menuItems += "<li>" + menuItems[i] + "</li>";
-  }
-  //something.forEach(createMenuList);
-  menuItems = "<ul>" + menuItems + "</ul>";
-}
-
-function insertVegText(value) {
   document.getElementById("product-list").innerHTML = menuItems;
 }
+
+function insertPricesText(value) {
+  menuItemPrices = value;
+  document.getElementById("product-list").innerHTML += menuItemPrices;
+}
+
+//Media Queries
+
+// function addGrid(screenThreshold) {
+//   if (screenThreshold.matches) {
+//   } else {
+//   }
+// }
+
+// var screenThreshold = window.matchMedia("(min-width: 769px)");
+// screenThreshold.addListener(addGrid);
