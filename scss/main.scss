@@ -82,9 +82,40 @@ body {
 
     &#food {
 
+      .menu-heading {
+        width: 100vw;
+        font-size: 36px;
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        background-color: darken($grey-color, $background-opacity);
+
+        &:hover {
+          color: $primary-color;
+          cursor: default;
+          @include ease0ut;
+        }
+      }
+
+      .dropdown {
+        justify-content: center;
+        overflow: hidden;
+        
+        &:hover .product-bar {
+          transform: scale(1);
+          opacity: 1;
+
+        }
+      }
+
       .product-bar {
-        width: 100%;
+        position: absolute;
         display: grid;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: 50% 0;
+        @include ease0ut;
+        width: 100%;
         background-color: rgba($grey-color, $background-opacity);
       }
 
@@ -225,6 +256,14 @@ body {
     background-image: $home;
   }
 
+  .food {
+    background-image: linear-gradient(
+      rgba(lightgrey, 0.9),
+      rgba(lightgrey, 0.9)
+    ),
+    $food;
+  }
+
   .contact {
     background-image: linear-gradient(
         rgba($grey-color, $background-opacity),
@@ -246,14 +285,6 @@ body {
 
   li {
     list-style-type: none;
-  }
-
-  h3 {
-    font-size: 36px;
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase;
-    background-color: darken($grey-color, $background-opacity);
   }
 
   h4 {
