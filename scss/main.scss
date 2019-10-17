@@ -26,7 +26,6 @@ body {
       top: 0;
       left: 0;
       height: 100vh;
-      width: 100vw;
 
       h1 {
         font-size: 48px;
@@ -62,14 +61,16 @@ body {
       bottom: 10px;
       transform: translate(-50%, -50%);
       margin: auto;
+      background-color: rgba(#fff, $background-opacity);
+      border-radius: 50%;
 
       img {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
 
         &:hover {
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
           background-color: rgba($grey-color, $background-opacity);
           @include ease0ut;
@@ -80,17 +81,6 @@ body {
     // Food
 
     &#food {
-      top: 0;
-      left: 0;
-      width: 100vw;
-
-      h3 {
-        font-size: 36px;
-        color: #fff;
-        margin: 0;
-        text-transform: uppercase;
-        background-color: darken($grey-color, $background-opacity);
-      }
 
       .product-bar {
         width: 100%;
@@ -116,21 +106,9 @@ body {
         }
       }
 
-      #product-list {
-        display: grid;
+      .grid-list {
         text-align: left;
         margin: 20px 20px 30px 20px;
-
-        h4 {
-          font-size: 20px;
-          margin: 20px 0px 10px 0px;
-        }
-
-        h5 {
-          font-size: 16px;
-          margin: 10px 0px 20px 0px;
-          color: red;
-        }
 
         li {
           font-size: 16px;
@@ -190,20 +168,33 @@ body {
       }
     }
 
-    // Drink
-
-    &#drink {
-      top: 0;
-      left: 0;
-    }
-
     // Contact
 
     &#contact {
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
+
+      .contact-heading {
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 30px
+      }
+
+      .contact-bg {
+        margin: 20px 20px 20px 20px;
+        padding: 20px 30px 20px 30px;
+        background-image: linear-gradient(
+          rgba($grey-color, 0.9),
+          rgba($grey-color, 0.9)
+        );
+      }
+
+      .contact-text {
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .location {
+        font-weight: 500;
+      }
     }
   }
 
@@ -212,6 +203,12 @@ body {
   footer {
     font-size: 12px;
     background: $grey-color;
+  }
+
+  // Grid
+
+  .grid-list {
+    display: grid;
   }
 
   // Background Image Manipulation
@@ -228,17 +225,6 @@ body {
     background-image: $home;
   }
 
-  .food {
-  }
-
-  .drink {
-    background-image: linear-gradient(
-        rgba($primary-color, $background-opacity),
-        rgba($primary-color, $background-opacity)
-      ),
-      $drink;
-  }
-
   .contact {
     background-image: linear-gradient(
         rgba($grey-color, $background-opacity),
@@ -251,6 +237,7 @@ body {
 
   p {
     font-size: 16px;
+    margin: 0.5em 0px 0.5em 0px;
   }
 
   ul {
@@ -259,6 +246,34 @@ body {
 
   li {
     list-style-type: none;
+  }
+
+  h3 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: darken($grey-color, $background-opacity);
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: 10px 0px 20px 0px;
+    color: red;
+  }
+
+  hr {
+    width: 60%;
+    margin: 30px auto 30px auto;
+    opacity: 0.7;
+    height: 1px;
+    border: 0;
+    background-color: DarkGrey;
   }
 }
 

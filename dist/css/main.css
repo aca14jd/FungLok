@@ -88,8 +88,7 @@ body {
     body section#home {
       top: 0;
       left: 0;
-      height: 100vh;
-      width: 100vw; }
+      height: 100vh; }
       body section#home h1 {
         font-size: 48px;
         color: #fff;
@@ -109,100 +108,91 @@ body {
       left: 50%;
       bottom: 10px;
       transform: translate(-50%, -50%);
-      margin: auto; }
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%; }
       body section #arrow img {
-        width: 35px;
-        height: 35px; }
+        width: 45px;
+        height: 45px; }
         body section #arrow img:hover {
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
           background-color: rgba(61, 61, 61, 0.5);
           transition: all 0.5s ease; }
-    body section#food {
-      top: 0;
-      left: 0;
-      width: 100vw; }
-      body section#food h3 {
-        font-size: 36px;
-        color: #fff;
-        margin: 0;
-        text-transform: uppercase;
-        background-color: #3c3c3c; }
-      body section#food .product-bar {
-        width: 100%;
-        display: grid;
-        background-color: rgba(61, 61, 61, 0.5); }
-      body section#food .category {
-        border: none;
-        padding: 0;
-        font-size: 32px;
+    body section#food .product-bar {
+      width: 100%;
+      display: grid;
+      background-color: rgba(61, 61, 61, 0.5); }
+    body section#food .category {
+      border: none;
+      padding: 0;
+      font-size: 32px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0px 10px 0px 10px;
+      padding: 5px 5px 5px 5px;
+      background-color: transparent; }
+      body section#food .category:hover {
+        color: #4d79ff;
+        transition: all 0.5s ease;
+        cursor: pointer; }
+    body section#food .grid-list {
+      text-align: left;
+      margin: 20px 20px 30px 20px; }
+      body section#food .grid-list li {
+        font-size: 16px;
+        display: block;
         font-weight: 500;
-        text-transform: uppercase;
-        color: #fff;
-        margin: 0px 10px 0px 10px;
-        padding: 5px 5px 5px 5px;
-        background-color: transparent; }
-        body section#food .category:hover {
-          color: #4d79ff;
-          transition: all 0.5s ease;
-          cursor: pointer; }
-      body section#food #product-list {
-        display: grid;
-        text-align: left;
-        margin: 20px 20px 30px 20px; }
-        body section#food #product-list h4 {
-          font-size: 20px;
-          margin: 20px 0px 10px 0px; }
-        body section#food #product-list h5 {
-          font-size: 16px;
-          margin: 10px 0px 20px 0px;
-          color: red; }
-        body section#food #product-list li {
-          font-size: 16px;
-          display: block;
-          font-weight: 500;
-          margin-top: 4px;
-          margin-bottom: 4px; }
-        body section#food #product-list .right {
-          align-self: center;
-          text-align: right;
-          margin-right: 20px; }
-        body section#food #product-list .product-grid {
-          grid-template-columns: 40px 3fr 100px;
-          display: grid; }
-        body section#food #product-list .veg-item {
-          display: block; }
-        body section#food #product-list .starter-item, body section#food #product-list .main-item, body section#food #product-list .side-item, body section#food #product-list .set-item {
-          display: none; }
-        body section#food #product-list .set-border {
-          padding: 5px 5px 5px 15px;
-          margin: 10px 10px 10px 10px;
-          border: #000 solid 2px;
-          border-radius: 25px; }
-        body section#food #product-list .green {
-          color: DarkGreen;
-          font-weight: bold; }
-        body section#food #product-list .red {
-          color: Red;
-          font-weight: bold; }
-        body section#food #product-list .spicy {
-          color: DarkRed;
-          font-weight: bold; }
-        body section#food #product-list .nut {
-          color: GoldenRod;
-          font-weight: bold; }
-    body section#drink {
-      top: 0;
-      left: 0; }
-    body section#contact {
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw; }
+        margin-top: 4px;
+        margin-bottom: 4px; }
+      body section#food .grid-list .right {
+        align-self: center;
+        text-align: right;
+        margin-right: 20px; }
+      body section#food .grid-list .product-grid {
+        grid-template-columns: 40px 3fr 100px;
+        display: grid; }
+      body section#food .grid-list .veg-item {
+        display: block; }
+      body section#food .grid-list .starter-item, body section#food .grid-list .main-item, body section#food .grid-list .side-item, body section#food .grid-list .set-item {
+        display: none; }
+      body section#food .grid-list .set-border {
+        padding: 5px 5px 5px 15px;
+        margin: 10px 10px 10px 10px;
+        border: #000 solid 2px;
+        border-radius: 25px; }
+      body section#food .grid-list .green {
+        color: DarkGreen;
+        font-weight: bold; }
+      body section#food .grid-list .red {
+        color: Red;
+        font-weight: bold; }
+      body section#food .grid-list .spicy {
+        color: DarkRed;
+        font-weight: bold; }
+      body section#food .grid-list .nut {
+        color: GoldenRod;
+        font-weight: bold; }
+    body section#contact .contact-heading {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 30px; }
+    body section#contact .contact-bg {
+      margin: 20px 20px 20px 20px;
+      padding: 20px 30px 20px 30px;
+      background-image: linear-gradient(rgba(61, 61, 61, 0.9), rgba(61, 61, 61, 0.9)); }
+    body section#contact .contact-text {
+      color: #fff;
+      font-size: 20px; }
+    body section#contact .location {
+      font-weight: 500; }
   body footer {
     font-size: 12px;
     background: #3d3d3d; }
+  body .grid-list {
+    display: grid; }
   body .overlay {
     vertical-align: top;
     position: relative;
@@ -211,16 +201,35 @@ body {
     background-position: 50%, 50%; }
   body .home {
     background-image: url(../img/home.jpg); }
-  body .drink {
-    background-image: linear-gradient(rgba(77, 121, 255, 0.5), rgba(77, 121, 255, 0.5)), url(../img/drink.jpg); }
   body .contact {
     background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0.5)), url(../img/contact.jpg); }
   body p {
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0.5em 0px 0.5em 0px; }
   body ul {
     padding-left: 0; }
   body li {
     list-style-type: none; }
+  body h3 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #3c3c3c; }
+  body h4 {
+    font-size: 20px;
+    margin: 20px 0px 10px 0px; }
+  body h5 {
+    font-size: 16px;
+    margin: 10px 0px 20px 0px;
+    color: red; }
+  body hr {
+    width: 60%;
+    margin: 30px auto 30px auto;
+    opacity: 0.7;
+    height: 1px;
+    border: 0;
+    background-color: DarkGrey; }
 
 @media screen and (min-width: 1171px) {
   .menu-nav {
@@ -232,7 +241,7 @@ body {
     margin-right: 5vw; }
   .product-bar {
     grid-template-columns: auto auto auto auto; }
-  #product-list {
+  .grid-list {
     grid-template-columns: 1fr 1fr; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -245,7 +254,7 @@ body {
     margin-right: 5vw; }
   .product-bar {
     grid-template-columns: auto auto auto; }
-  #product-list {
+  .grid-list {
     grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 768px) {
@@ -258,7 +267,7 @@ body {
     margin-bottom: 5vh; }
   .product-bar {
     grid-template-columns: auto auto; }
-  #product-list {
+  .grid-list {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
@@ -271,5 +280,5 @@ body {
     margin-bottom: 5vh; }
   .product-bar {
     grid-template-columns: auto; }
-  #product-list {
+  .grid-list {
     grid-template-columns: 1fr; } }
