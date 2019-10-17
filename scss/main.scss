@@ -3,6 +3,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 0px;
 }
 
 body {
@@ -126,6 +127,7 @@ body {
         }
 
         h5 {
+          font-size: 16px;
           margin: 0px 0px 20px 0px;
           color: red;
         }
@@ -149,46 +151,12 @@ body {
           display: grid;
         }
 
-        .veg-item, .starter-item, .main-item, .side-item {
+        .veg-item {
+          display: block;
+        }
+
+        .starter-item, .main-item, .side-item, .set-item {
           display: none;
-        }
-
-        // Menu Grid
-
-        .grid-a {
-          grid-area: a;
-        }
-
-        .grid-b {
-          grid-area: b;
-        }
-
-        .grid-c {
-          grid-area: c;
-        }
-
-        .grid-d {
-          grid-area: d;
-        }
-
-        .grid-e {
-          grid-area: e;
-        }
-
-        .grid-f {
-          grid-area: f;
-        }
-
-        .grid-g {
-          grid-area: g;
-        }
-
-        .grid-h {
-          grid-area: h;
-        }
-
-        .grid-i {
-          grid-area: i;
         }
 
         // Menu Span

@@ -16,13 +16,6 @@
 
   #product-list {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "a f"
-    "b g"
-    "c h"
-    "d i"
-    "e .";
   }
 }
 
@@ -44,13 +37,6 @@
 
   #product-list {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: 
-    "a f"
-    "b g"
-    "c h"
-    "d i"
-    "e .";
   }
 }
 

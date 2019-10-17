@@ -20,9 +20,7 @@
         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
         <li class="nav-item"><a href="#drink" class="nav-link">Drinks</a></li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -37,19 +35,20 @@
 
   <!-- Food -->
   <section id="food" class="overlay food">
-    <h3>Menu</h3>
+    <h3>Takeaway Menu</h3>
     <div class="product-bar">
       <button class="category" id="veg">Vegetarian</button>
       <button class="category" id="starters">Starters</button>
       <button class="category" id="mains">Main Dishes</button>
-      <button class="category" id="sides">Side Portions</button>
+      <button class="category" id="sides">Sides & Specials</button>
+      <button class="category" id="set">Set Meals</button>
     </div>
-    <ul id="product-list">
+    <div id="product-list">
       <!-- Vegetarian -->
       <div class="veg-item">
         <h5>Some meals may contain nuts <span class="nut">(N)</span></h5>
         <h4>Vegetarian Starters</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>1.</li>
           <li>Vegetarian Spring Rolls</li>
           <li class="right">£3.50</li>
@@ -65,12 +64,12 @@
           <li>5.</li>
           <li>Sweetcorn Soup</li>
           <li class="right">£2.50</li>
-        </div>
+        </ul>
       </div>
       <div class="veg-item">
         <h4>Vegetarian Main Courses</h4>
         <h5>(All the following dishes do not include rice or chips unless stated)</h5>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>6.</li>
           <li>Braised Chinese Vegetables and Chinese Mushrooms in Oyster Sauce</li>
           <li class="right">£6.00</li>
@@ -107,13 +106,13 @@
           <li>17.</li>
           <li>Vegetable Chow Mein or Ho Fan</li>
           <li class="right">£6.00</li>
-        </div>
+        </ul>
       </div>
       <!-- Starter -->
       <div class="starter-item">
         <h5>Some meals may contain nuts <span class="nut">(N)</span></h5>
         <h4>Soup</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>18.</li>
           <li>Chicken & Sweetcorn Soup</li>
           <li class="right">£2.50</li>
@@ -156,11 +155,11 @@
           <li>31.</li>
           <li>Chicken Noodle Soup</li>
           <li class="right">£5.50</li>
-        </div>
+        </ul>
       </div>
       <div class="starter-item">
         <h4>Appetisers</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>33.</li>
           <li>Hot Combination <span class="red">(Min 2 persons 7 per head)</span> <strong>(Barbecued Ribs, Vietnamese
               Style Spring Rolls,
@@ -219,16 +218,17 @@
           <li>52.</li>
           <li>Char Sui Buns <strong>(2)</strong></li>
           <li class="right">£3.00</li>
-        </div>
+        </ul>
       </div>
       <!-- Mains -->
-      <div class="main-item grid-a">
+      <!-- grid a -->
+      <div class="main-item">
         <h5>Some meals may contain nuts <span class="nut">(N)</span></h5>
         <h5>The following dishes are only a recommendation from our chef. You the customer can choose any variety from
           our meat and seafood selection. The dishes with the choice of rice or chips are available for a supplement of
           £1 except Fried Rice, Noodle and Ho Fan Dishes</h5>
         <h4>Duck Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>54.</li>
           <li>Deep Fried Aromatic Duck with Minced Prawn Stuffing in Straw Mushroom Sauce</li>
           <li class="right">£9.50</li>
@@ -250,11 +250,9 @@
           <li>60.</li>
           <li>Roast Duck Cantonese Style</li>
           <li class="right">£7.50</li>
-        </div>
-      </div>
-      <div class="main-item grid-b">
+        </ul>
         <h4>Beef Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>61.</li>
           <li>Deep Fried Shredded Beef in Chilli Sauce</li>
           <li class="right">£8.00</li>
@@ -291,11 +289,9 @@
           <li>72.</li>
           <li>Fried Beef Szechuan Style <span class="spicy">(Spicy)</span></li>
           <li class="right">£6.30</li>
-        </div>
-      </div>
-      <div class="main-item grid-c">
+        </ul>
         <h4>Chicken Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>73.</li>
           <li>Fried Chicken Fillet in Black Bean Sauce</li>
           <li class="right">£6.30</li>
@@ -341,41 +337,40 @@
           <li>87.</li>
           <li>Deep Fried Shredded Chicken in Chilli Sauce</li>
           <li class="right">£7.00</li>
-        </div>
-      </div>
-      <div class="main-item grid-d">
+        </ul>
         <h4>Pork Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>88.</li>
           <li>Sweet & Sour Pork</li>
           <li class="right">£6.30</li>
           <li>89.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> with Cashewnuts <span class="nut">(N)</span>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Cashewnuts <span class="nut">(N)</span>
           </li>
           <li class="right">£6.30</li>
           <li>90.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> in Satay Sauce</li>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Satay Sauce</li>
           <li class="right">£6.30</li>
           <li>91.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> in Oyster Sauce</li>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Oyster Sauce</li>
           <li class="right">£6.30</li>
           <li>92.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> with Seasonal Vegetables</li>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Seasonal Vegetables</li>
           <li class="right">£6.30</li>
           <li>93.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> in Hot Bean Sauce</li>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Hot Bean Sauce</li>
           <li class="right">£6.30</li>
           <li>94.</li>
-          <li>Fried Sliced Char Sui <strong>Chinese Roast Pork</strong> with Green Peppers & Black Bean Sauce</li>
+          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Green Peppers & Black Bean Sauce</li>
           <li class="right">£6.30</li>
           <li>95.</li>
           <li>Deep Fried Pork with Garlic & Chilli Sauce</li>
           <li class="right">£6.30</li>
-        </div>
+        </ul>
       </div>
-      <div class="main-item grid-e">
+      <!-- grid b -->
+      <div class="main-item">
         <h4>Seafood Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>96.</li>
           <li>Steamed Scallops & King Prawn with Hot Bean Sauce</li>
           <li class="right">£11.00</li>
@@ -433,11 +428,9 @@
           <li>119.</li>
           <li>Sweet & Sour Fish</li>
           <li class="right">£6.50</li>
-        </div>
-      </div>
-      <div class="main-item grid-f">
+        </ul>
         <h4>Curry Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>120.</li>
           <li>Mixed Veg Curry</li>
           <li class="right">£6.30</li>
@@ -459,11 +452,9 @@
           <li>126.</li>
           <li>Char Sui Curry</li>
           <li class="right">£6.30</li>
-        </div>
-      </div>
-      <div class="main-item grid-g">
+        </ul>
         <h4>Fried Rice Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>127.</li>
           <li>Special Fried Rice <strong>(Chicken, Beef, King Prawn, Char Sui & Vegetables)</strong></li>
           <li class="right">£8.50</li>
@@ -488,11 +479,9 @@
           <li>134.</li>
           <li>Sliced Duck Fried Rice</li>
           <li class="right">£7.50</li>
-        </div>
-      </div>
-      <div class="main-item grid-h">
+        </ul>
         <h4>Noodle & Ho Fan Dishes</h4>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>135.</li>
           <li>Special Chow Mein or Ho Fan</li>
           <li class="right">£8.50</li>
@@ -514,12 +503,10 @@
           <li>141.</li>
           <li>Mixed Seafood Chow Mein</li>
           <li class="right">£10.00</li>
-        </div>
-      </div>
-      <div class="main-item grid-i">
+        </ul>
         <h4>English Dishes</h4>
         <h5>English dishes are served with Chips, Tomatoes & Mushrooms</h5>
-        <div class="product-grid">
+        <ul class="product-grid">
           <li>142.</li>
           <li>Grilled Black Peppered Sirloin Steak</li>
           <li class="right">£15.00</li>
@@ -547,9 +534,89 @@
           <li>150.</li>
           <li>Mushroom Omelette</li>
           <li class="right">£6.50</li>
-        </div>
+        </ul>
       </div>
-    </ul>
+      <!-- Sides -->
+      <div class="side-item">
+        <h5>Some meals may contain nuts <span class="nut">(N)</span></h5>
+        <h4>Side Portions</h4>
+        <ul class="product-grid">
+          <li>151.</li>
+          <li>Curry Sauce</li>
+          <li class="right">£1.50</li>
+          <li>152.</li>
+          <li>Sweet & Sour Sauce</li>
+          <li class="right">£1.50</li>
+          <li>153.</li>
+          <li>Garlic & Chilli Sauce</li>
+          <li class="right">£1.50</li>
+          <li>154.</li>
+          <li>Boiled Rice</li>
+          <li class="right">£2.00</li>
+          <li>155.</li>
+          <li>Chips</li>
+          <li class="right">£2.00</li>
+          <li>156.</li>
+          <li>Prawn Crackers</li>
+          <li class="right">£2.00</li>
+          <li>157.</li>
+          <li>Egg Fried Rice</li>
+          <li class="right">£2.20</li>
+          <li>158.</li>
+          <li>Onion Rings</li>
+          <li class="right">£3.00</li>
+          <li>159.</li>
+          <li>Beansprouts</li>
+          <li class="right">£3.00</li>
+          <li>160.</li>
+          <li>Chow Mein <strong>(Soft Noodles)</strong></li>
+          <li class="right">£3.50</li>
+          <li>161.</li>
+          <li>Mushrooms</li>
+          <li class="right">£3.50</li>
+          <li>162.</li>
+          <li>Ho Fan <strong>(Amoy Sauce)</strong></li>
+          <li class="right">£5.00</li>
+          <li>163.</li>
+          <li>Salt & Pepper Chips</li>
+          <li class="right">£3.00</li>
+        </ul>
+      </div>
+      <div class="side-item">
+        <h4>Special Mixed Dishes</h4>
+        <h5>Three Delicious: King Prawn, Beef and Chicken</h5>
+        <ul class="product-grid">
+          <li>164.</li>
+          <li>Three Delicious Kung Po Sauce</li>
+          <li class="right">£7.80</li>
+          <li>165.</li>
+          <li>Three Delicious Black Bean Sauce</li>
+          <li class="right">£7.80</li>
+          <li>166.</li>
+          <li>Three Delicious Ginger Spring Onion</li>
+          <li class="right">£7.80</li>
+          <li>167.</li>
+          <li>Three Delicious Satay Sauce <span class="nut">(N)</span></li>
+          <li class="right">£7.80</li>
+          <li>168.</li>
+          <li>Three Delicious Garlic & Chilli Sauce <strong>(Deep Fried)</strong></li>
+          <li class="right">£7.80</li>
+          <li>169.</li>
+          <li>Sweet & Sour Mixed <strong>(Deep Fried King Prawn, Chicken, Pork)</strong></li>
+          <li class="right">£7.80</li>
+          <li>170.</li>
+          <li>Seafood Special with Kung Po Sauce <strong>(King Prawn, Scallop & Squid)</strong></li>
+          <li class="right">£10.00</li>
+        </ul>
+      </div>
+      <div class="set-item">
+        <h5>Some meals may contain nuts <span class="nut">(N)</span></h5>
+        <h4>Set Meals</h4>
+        <ul class="product-grid">
+
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Drinks -->

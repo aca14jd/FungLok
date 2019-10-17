@@ -72,7 +72,8 @@
   transition-delay: 0.4s; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 0px; }
 
 body {
   color: #000;
@@ -154,6 +155,7 @@ body {
           font-size: 20px;
           margin: 20px 0px 10px 0px; }
         body section#food #product-list h5 {
+          font-size: 16px;
           margin: 0px 0px 20px 0px;
           color: red; }
         body section#food #product-list li {
@@ -169,26 +171,10 @@ body {
         body section#food #product-list .product-grid {
           grid-template-columns: 40px 3fr 100px;
           display: grid; }
-        body section#food #product-list .veg-item, body section#food #product-list .starter-item, body section#food #product-list .main-item, body section#food #product-list .side-item {
+        body section#food #product-list .veg-item {
+          display: block; }
+        body section#food #product-list .starter-item, body section#food #product-list .main-item, body section#food #product-list .side-item, body section#food #product-list .set-item {
           display: none; }
-        body section#food #product-list .grid-a {
-          grid-area: a; }
-        body section#food #product-list .grid-b {
-          grid-area: b; }
-        body section#food #product-list .grid-c {
-          grid-area: c; }
-        body section#food #product-list .grid-d {
-          grid-area: d; }
-        body section#food #product-list .grid-e {
-          grid-area: e; }
-        body section#food #product-list .grid-f {
-          grid-area: f; }
-        body section#food #product-list .grid-g {
-          grid-area: g; }
-        body section#food #product-list .grid-h {
-          grid-area: h; }
-        body section#food #product-list .grid-i {
-          grid-area: i; }
         body section#food #product-list .red {
           color: Red;
           font-weight: bold; }
@@ -239,9 +225,7 @@ body {
   .product-bar {
     grid-template-columns: auto auto auto auto; }
   #product-list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "a f" "b g" "c h" "d i" "e ."; } }
+    grid-template-columns: 1fr 1fr; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu-nav {
@@ -254,9 +238,7 @@ body {
   .product-bar {
     grid-template-columns: auto auto auto; }
   #product-list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "a f" "b g" "c h" "d i" "e ."; } }
+    grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 768px) {
   .menu-nav {

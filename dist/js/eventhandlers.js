@@ -26,6 +26,7 @@ var vegItem = document.getElementsByClassName("veg-item");
 var starterItem = document.getElementsByClassName("starter-item");
 var mainItem = document.getElementsByClassName("main-item");
 var sideItem = document.getElementsByClassName("side-item");
+var setItem = document.getElementsByClassName("set-item");
 
 document.getElementById("veg").onclick = function () {
   for (i = 0; i < vegItem.length; i++) {
@@ -39,6 +40,9 @@ document.getElementById("veg").onclick = function () {
   }
   for (i = 0; i < sideItem.length; i++) {
     sideItem[i].style.display = "none";
+  }
+  for (i = 0; i < setItem.length; i++) {
+    setItem[i].style.display = "none";
   }
 };
 
@@ -55,6 +59,9 @@ document.getElementById("starters").onclick = function () {
   for (i = 0; i < sideItem.length; i++) {
     sideItem[i].style.display = "none";
   }
+  for (i = 0; i < setItem.length; i++) {
+    setItem[i].style.display = "none";
+  }
 };
 
 document.getElementById("mains").onclick = function () {
@@ -69,6 +76,9 @@ document.getElementById("mains").onclick = function () {
   }
   for (i = 0; i < sideItem.length; i++) {
     sideItem[i].style.display = "none";
+  }
+  for (i = 0; i < setItem.length; i++) {
+    setItem[i].style.display = "none";
   }
 };
 
@@ -85,15 +95,25 @@ document.getElementById("sides").onclick = function () {
   for (i = 0; i < sideItem.length; i++) {
     sideItem[i].style.display = "block";
   }
+  for (i = 0; i < setItem.length; i++) {
+    setItem[i].style.display = "none";
+  }
 };
 
-//Media Queries
-
-// function addGrid(screenThreshold) {
-//   if (screenThreshold.matches) {
-//   } else {
-//   }
-// }
-
-// var screenThreshold = window.matchMedia("(min-width: 769px)");
-// screenThreshold.addListener(addGrid);
+document.getElementById("set").onclick = function () {
+  for (i = 0; i < vegItem.length; i++) {
+    vegItem[i].style.display = "none";
+  }
+  for (i = 0; i < starterItem.length; i++) {
+    starterItem[i].style.display = "none";
+  }
+  for (i = 0; i < mainItem.length; i++) {
+    mainItem[i].style.display = "none";
+  }
+  for (i = 0; i < sideItem.length; i++) {
+    sideItem[i].style.display = "none";
+  }
+  for (i = 0; i < setItem.length; i++) {
+    setItem[i].style.display = "block";
+  }
+};
