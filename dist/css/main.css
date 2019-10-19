@@ -4,30 +4,31 @@
   right: 0;
   top: 0;
   height: 10vh;
-  width: 88px;
+  width: 83px;
   background-color: rgba(61, 61, 61, 0.5); }
 
 .menu-btn {
   position: fixed;
   z-index: 3;
-  right: 30px;
-  top: 4vh;
+  right: 20px;
+  top: 3vh;
   cursor: pointer;
   transition: all 0.5s ease; }
   .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
+    width: 40px;
+    height: 4px;
+    margin: 0 0 8px 0;
+    border-radius: 3px;
     background: #fff;
+    position: relative;
     transition: all 0.5s ease; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+  .menu-btn.close .btn-line:nth-child(1) {
+    transform: translateY(12px) rotate(135deg); }
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: translateY(-12px) rotate(-135deg); }
 
 .menu {
   position: fixed;

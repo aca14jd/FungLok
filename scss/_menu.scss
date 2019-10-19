@@ -6,43 +6,46 @@
   right: 0;
   top: 0;
   height: 10vh;
-  width: 88px;
+  width: 83px;
   background-color: rgba($grey-color, $background-opacity);
 }
 
 .menu-btn {
   position: fixed;
   z-index: 3;
-  right: 30px;
-  top: 4vh;
+  right: 20px;
+  top: 3vh;
   cursor: pointer;
   @include ease0ut;
 
   .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
+    width: 40px;
+    height: 4px;
+    margin: 0 0 8px 0;
+    border-radius: 3px;
     background: #fff;
+    position: relative;
     @include ease0ut;
   }
 
   // Rotate Into X With Menu Lines
 
   &.close {
-    transform: rotate(180deg);
+
 
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: translateY(12px) rotate(135deg);
       }
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
       }
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: translateY(-12px) rotate(-135deg);
       }
     }
   }
