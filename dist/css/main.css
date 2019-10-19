@@ -1,15 +1,24 @@
+.menu-overlay {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  height: 10vh;
+  width: 88px;
+  background-color: rgba(61, 61, 61, 0.5); }
+
 .menu-btn {
   position: fixed;
   z-index: 3;
   right: 30px;
-  top: 30px;
+  top: 4vh;
   cursor: pointer;
   transition: all 0.5s ease; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -90,7 +99,7 @@ body {
       left: 0;
       height: 100vh; }
       body section#home h1 {
-        font-size: 48px;
+        font-size: 62px;
         color: #fff;
         margin-top: 10vh;
         margin-bottom: 0px;
@@ -107,22 +116,24 @@ body {
       position: absolute;
       left: 50%;
       bottom: 10px;
-      transform: translate(-50%, -50%);
       margin: auto;
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 50%; }
-      body section #arrow img {
-        width: 45px;
-        height: 45px; }
-        body section #arrow img:hover {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: rgba(61, 61, 61, 0.5);
-          transition: all 0.5s ease; }
+      font-size: 45px;
+      color: #3d3d3d;
+      width: 45px;
+      height: 45px;
+      transform: translate(-50%, -50%); }
+      body section #arrow .fa-chevron-circle-down {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%; }
+      body section #arrow:hover {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        transition: all 0.5s ease; }
     body section#food .menu-heading {
       width: 100vw;
       font-size: 36px;
+      font-weight: 600;
       color: #fff;
       margin: 0;
       text-transform: uppercase;
@@ -145,7 +156,7 @@ body {
       transform-origin: 50% 0;
       transition: all 0.5s ease;
       width: 100%;
-      background-color: rgba(61, 61, 61, 0.5); }
+      background-color: rgba(61, 61, 61, 0.9); }
     body section#food .category {
       border: none;
       padding: 0;
@@ -153,7 +164,7 @@ body {
       font-weight: 500;
       text-transform: uppercase;
       color: #fff;
-      margin: 0px 10px 0px 10px;
+      margin: 5px 10px 5px 10px;
       padding: 5px 5px 5px 5px;
       background-color: transparent; }
       body section#food .category:hover {
@@ -210,21 +221,38 @@ body {
       font-size: 20px; }
     body section#contact .location {
       font-weight: 500; }
+    body section#contact a {
+      margin: 0px 10px 0px 10px; }
+    body section#contact .fab {
+      font-size: 40px; }
+      body section#contact .fab:visited {
+        text-decoration: none; }
+      body section#contact .fab:hover {
+        text-decoration: none; }
+      body section#contact .fab:focus {
+        text-decoration: none; }
+    body section#contact .fa-tripadvisor {
+      color: green; }
+    body section#contact .fa-facebook {
+      color: blue; }
   body footer {
     font-size: 12px;
     background: #3d3d3d; }
   body .grid-list {
     display: grid; }
+  body .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
   body .overlay {
     vertical-align: top;
     position: relative;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50%, 50%; }
+    background-position: 50%, 70%; }
   body .home {
     background-image: url(../img/home.jpg); }
   body .food {
-    background-image: linear-gradient(rgba(211, 211, 211, 0.9), rgba(211, 211, 211, 0.9)), url(../img/food.jpg); }
+    background-image: linear-gradient(rgba(211, 211, 211, 0.7), rgba(211, 211, 211, 0.7)), url(../img/food.jpg); }
   body .contact {
     background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0.5)), url(../img/contact.jpg); }
   body p {
@@ -239,7 +267,7 @@ body {
     margin: 20px 0px 10px 0px; }
   body h5 {
     font-size: 16px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 10px 20px 10px;
     color: red; }
   body hr {
     width: 60%;
@@ -248,6 +276,17 @@ body {
     height: 1px;
     border: 0;
     background-color: DarkGrey; }
+  body .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  body .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
 
 @media screen and (min-width: 1171px) {
   .menu-nav {

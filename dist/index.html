@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/9dd8d9e3d3.js" crossorigin="anonymous"></script>
   <title>Fung Lok | Chinese & Vietnamese Restaurant</title>
 </head>
@@ -11,6 +12,7 @@
 <body>
   <!-- Header -->
   <header>
+    <div class="menu-overlay"></div>
     <div class="menu-btn">
       <div class="btn-line"></div>
       <div class="btn-line"></div>
@@ -20,7 +22,6 @@
       <ul class="menu-nav">
         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
-        <li class="nav-item"><a href="#drink" class="nav-link">Drinks</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -31,7 +32,7 @@
     <br />
     <h1>Fung Lok</h1>
     <h2>Chinese & Vietnamese Restaurant</h2>
-    <a href="#food" id="arrow"><img src="../dist/img/down-arrow.png" /></a>
+    <a href="#food" id="arrow"><i class="fas fa-chevron-circle-down"></i></a>
   </section>
 
   <!-- Food -->
@@ -623,9 +624,19 @@
       </div>
       <!-- Set Meals -->
       <div class="set-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
+        <div class="grid-2">
+          <div>
+            <h5>Eat in prices may vary.</h5>
+            <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please
+              speak
+              to a member of our staff</h5>
+          </div>
+          <div>
+            <h5 class="green right">For 2 Persons 1-2</h5>
+            <h5 class="green right">For 3 Persons 1-3</h5>
+            <h5 class="green right">For 4 Persons 1-4</h5>
+          </div>
+        </div>
         <h4>Set Meals</h4>
         <ul class="product-grid set-border">
           <li>A.</li>
@@ -660,9 +671,6 @@
         </ul>
       </div>
       <div class="set-item">
-        <h5 class="green right">For 2 Persons 1-2</h5>
-        <h5 class="green right">For 3 Persons 1-3</h5>
-        <h5 class="green right">For 4 Persons 1-4</h5>
         <ul class="product-grid set-border">
           <li>C.</li>
           <div>
@@ -706,7 +714,7 @@
     <div class="grid-list">
       <div class="contact-bg">
         <h4 class="contact-heading">About</h4>
-        <p class="contact-text">Fung Lok is an Authentic Chinese & Vietnamese Restaurant which sets a calm and quiet
+        <p class="contact-text">Fung Lok is an authentic Chinese & Vietnamese Restaurant which sets a calm and quiet
           atmosphere well suited for business meetings or for a casual meal.</p>
         <p class="contact-text">The atmosphere is welcoming and friendly in which you are able to relax and enjoy a
           delicious meal in a Chinese & Vietnamese background.</p>
@@ -714,10 +722,24 @@
           Western design.</p>
         <p class="contact-text">The small vibrant blue bar adds to the modern design with its Chinese beers and Western
           beverages.</p>
+        <p class="contact-text">The staff are more than happy to help you to have a relaxing and enjoyable experience
+          when dining.</p>
+        <p class="contact-text">There are lunch specials available when eating in which allows for a casual dine for a
+          cheaper price.</p>
+        <p class="contact-text">There is a fine selection of wine, spirits and other alcoholic and non-alcoholic
+          beverages to compliment the hearty Asian food.</p>
         <p class="contact-text">The restaurant is vegetarian-friendly with its dedicated wide selection of vegetarian
           starters and mains.</p>
         <p class="contact-text">The restaurant is also child-friendly with a children's menu available when eating in
           and there are plentiful amounts of high chairs for small children.</p>
+        <p class="contact-text">Tables are usually available without much wait but if you would like to make sure you
+          have a table ready for you immediately, please make reservations by contacting us.</p>
+
+
+        <a
+          href="https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d2628894-Reviews-Fung_Lok-Liverpool_Merseyside_England.html"><i
+            class="fab fa-tripadvisor"></i></a>
+        <a href="https://www.facebook.com/pages/Fung-Lok/159970840687090"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="contact-bg">
         <h4 class="contact-heading">Contact & Location</h4>
@@ -732,10 +754,16 @@
         <p class="contact-text location">55 Allerton Road</p>
         <p class="contact-text location">Liverpool</p>
         <p class="contact-text location">L18 2DA</p>
+        <hr>
+        <div class="map-responsive">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.5416658320933!2d-2.911685384160005!3d53.38724977998756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2039f8b8094b%3A0xd603d5e2d29726c7!2sFung%20Lok%20Chinese%20Vietnamese%20Restaurant!5e0!3m2!1sen!2suk!4v1571417207056!5m2!1sen!2suk"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
       </div>
     </div>
   </section>
-  <footer>Website designed and created by Jason Diep</footer>
+  <footer>Website design and content is created by Jason Diep</footer>
 
   <script src="js/eventhandlers.js"></script>
 </body>

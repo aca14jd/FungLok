@@ -1,10 +1,20 @@
 // Menu Button
 
+.menu-overlay {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  height: 10vh;
+  width: 88px;
+  background-color: rgba($grey-color, $background-opacity);
+}
+
 .menu-btn {
   position: fixed;
   z-index: 3;
   right: 30px;
-  top: 30px;
+  top: 4vh;
   cursor: pointer;
   @include ease0ut;
 
@@ -12,7 +22,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     @include ease0ut;
   }
 

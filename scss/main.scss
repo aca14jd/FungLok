@@ -28,7 +28,7 @@ body {
       height: 100vh;
 
       h1 {
-        font-size: 48px;
+        font-size: 62px;
         color: #fff;
         margin-top: 10vh;
         margin-bottom: 0px;
@@ -46,36 +46,28 @@ body {
       }
     }
 
-    // img#slideshow {
-    //   width: 90vw;
-    //   max-height: 60vh;
-    //   object-fit: contain;
-    //   filter: drop-shadow(0px 0px 1px rgba(0,0,0,.7))
-    //   drop-shadow(0px 0px 10px rgba(0,0,0,.7));
-    // }
-
     #arrow {
-      // positions arrow at the bottom center of page
       position: absolute;
       left: 50%;
       bottom: 10px;
-      transform: translate(-50%, -50%);
       margin: auto;
-      background-color: rgba(#fff, $background-opacity);
-      border-radius: 50%;
+      font-size: 45px;
+      color: $grey-color;
+      width: 45px;
+      height: 45px;
+      transform: translate(-50%, -50%);
 
-      img {
-        width: 45px;
-        height: 45px;
+      .fa-chevron-circle-down {
+        background-color: rgba(#fff, $background-opacity);
+        border-radius: 50%;
+      }
 
         &:hover {
           width: 50px;
           height: 50px;
-          border-radius: 50%;
-          background-color: rgba($grey-color, $background-opacity);
+          font-size: 50px;
           @include ease0ut;
         }
-      }
     }
 
     // Food
@@ -85,6 +77,7 @@ body {
       .menu-heading {
         width: 100vw;
         font-size: 36px;
+        font-weight: 600;
         color: #fff;
         margin: 0;
         text-transform: uppercase;
@@ -116,7 +109,7 @@ body {
         transform-origin: 50% 0;
         @include ease0ut;
         width: 100%;
-        background-color: rgba($grey-color, $background-opacity);
+        background-color: rgba($grey-color, 0.9);
       }
 
       .category {
@@ -126,7 +119,7 @@ body {
         font-weight: 500;
         text-transform: uppercase;
         color: #fff;
-        margin: 0px 10px 0px 10px;
+        margin: 5px 10px 5px 10px;
         padding: 5px 5px 5px 5px;
         background-color: transparent;
 
@@ -226,6 +219,31 @@ body {
       .location {
         font-weight: 500;
       }
+
+      a {
+        margin: 0px 10px 0px 10px;
+      }
+
+      .fab {
+        font-size: 40px;
+        &:visited {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      
+      .fa-tripadvisor {
+        color: green;
+      }
+
+      .fa-facebook {
+        color: blue;
+      }
     }
   }
 
@@ -242,6 +260,11 @@ body {
     display: grid;
   }
 
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   // Background Image Manipulation
 
   .overlay {
@@ -249,7 +272,7 @@ body {
     position: relative;
     background-size: cover;
     background-attachment: fixed; // Image position does not move even when scrolled
-    background-position: 50%, 50%; // Uses the center of the image
+    background-position: 50%, 70%; // Uses the center of the image
   }
 
   .home {
@@ -258,8 +281,8 @@ body {
 
   .food {
     background-image: linear-gradient(
-      rgba(lightgrey, 0.9),
-      rgba(lightgrey, 0.9)
+      rgba(lightgrey, 0.7),
+      rgba(lightgrey, 0.7)
     ),
     $food;
   }
@@ -294,7 +317,7 @@ body {
 
   h5 {
     font-size: 16px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 10px 20px 10px;
     color: red;
   }
 
@@ -306,6 +329,22 @@ body {
     border: 0;
     background-color: DarkGrey;
   }
+
+  // Google Maps
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 }
 
 @import "mobile";
