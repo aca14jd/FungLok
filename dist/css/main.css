@@ -186,12 +186,14 @@ body {
         text-align: right;
         margin-right: 20px; }
       body section#food .grid-list .product-grid {
-        grid-template-columns: 40px 3fr 100px;
+        grid-template-columns: 40px auto 90px 90px;
         display: grid; }
+      body section#food .grid-list .veg-item, body section#food .grid-list .starter-item, body section#food .grid-list .main-item, body section#food .grid-list .side-item, body section#food .grid-list .set-item {
+        margin: 0px auto 0px auto;
+        max-width: 550px;
+        display: none; }
       body section#food .grid-list .veg-item {
         display: block; }
-      body section#food .grid-list .starter-item, body section#food .grid-list .main-item, body section#food .grid-list .side-item, body section#food .grid-list .set-item {
-        display: none; }
       body section#food .grid-list .set-border {
         padding: 5px 5px 5px 15px;
         margin: 10px 10px 10px 10px;
@@ -201,13 +203,13 @@ body {
         color: DarkGreen;
         font-weight: bold; }
       body section#food .grid-list .red {
-        color: Red;
+        color: #a10000;
         font-weight: bold; }
       body section#food .grid-list .spicy {
         color: DarkRed;
         font-weight: bold; }
       body section#food .grid-list .nut {
-        color: GoldenRod;
+        color: #6e5413;
         font-weight: bold; }
     body section#contact .contact-heading {
       color: #fff;
@@ -233,9 +235,9 @@ body {
       body section#contact .fab:focus {
         text-decoration: none; }
     body section#contact .fa-tripadvisor {
-      color: green; }
+      color: darkgreen; }
     body section#contact .fa-facebook {
-      color: blue; }
+      color: #0000a5; }
   body footer {
     font-size: 12px;
     background: #3d3d3d; }
@@ -315,7 +317,7 @@ body {
   .grid-list {
     grid-template-columns: 1fr 1fr; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   .menu-nav {
     flex-flow: column wrap;
     width: 100%;

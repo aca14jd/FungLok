@@ -149,16 +149,18 @@ body {
         }
 
         .product-grid {
-          grid-template-columns: 40px 3fr 100px;
+          grid-template-columns: 40px auto 90px 90px;
           display: grid;
+        }
+
+        .veg-item, .starter-item, .main-item, .side-item, .set-item {
+          margin: 0px auto 0px auto;
+          max-width: 550px;
+          display: none;
         }
 
         .veg-item {
           display: block;
-        }
-
-        .starter-item, .main-item, .side-item, .set-item {
-          display: none;
         }
 
         .set-border {
@@ -176,7 +178,7 @@ body {
         }
 
         .red {
-          color: Red;
+          color: rgb(161, 0, 0);
           font-weight: bold;
         }
 
@@ -186,7 +188,7 @@ body {
         }
 
         .nut {
-          color: GoldenRod;
+          color: rgb(110, 84, 19);
           font-weight: bold;
         }
       }
@@ -238,11 +240,11 @@ body {
       }
       
       .fa-tripadvisor {
-        color: green;
+        color: rgb(0, 100, 0);
       }
 
       .fa-facebook {
-        color: blue;
+        color: rgb(0, 0, 165);
       }
     }
   }
