@@ -148,12 +148,16 @@ body {
           margin-right: 20px;
         }
 
+        .center {
+          align-self: center;
+        }
+
         .product-grid {
           grid-template-columns: 40px auto 90px 90px;
           display: grid;
         }
 
-        .veg-item, .starter-item, .main-item, .side-item, .set-item {
+        .veg-item, .starter-item, .main-item, .side-item, .set-item, .dessert-item, .beverage-item {
           margin: 0px auto 0px auto;
           max-width: 550px;
           display: none;

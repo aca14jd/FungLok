@@ -57,7 +57,7 @@
   }
 
   .grid-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 }
 
@@ -78,6 +78,6 @@
   }
 
   .grid-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 }

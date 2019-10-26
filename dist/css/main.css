@@ -185,10 +185,12 @@ body {
         align-self: center;
         text-align: right;
         margin-right: 20px; }
+      body section#food .grid-list .center {
+        align-self: center; }
       body section#food .grid-list .product-grid {
         grid-template-columns: 40px auto 90px 90px;
         display: grid; }
-      body section#food .grid-list .veg-item, body section#food .grid-list .starter-item, body section#food .grid-list .main-item, body section#food .grid-list .side-item, body section#food .grid-list .set-item {
+      body section#food .grid-list .veg-item, body section#food .grid-list .starter-item, body section#food .grid-list .main-item, body section#food .grid-list .side-item, body section#food .grid-list .set-item, body section#food .grid-list .dessert-item, body section#food .grid-list .beverage-item {
         margin: 0px auto 0px auto;
         max-width: 550px;
         display: none; }
@@ -328,7 +330,7 @@ body {
   .product-bar {
     grid-template-columns: auto auto; }
   .grid-list {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: auto; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {
@@ -341,4 +343,4 @@ body {
   .product-bar {
     grid-template-columns: auto; }
   .grid-list {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: auto; } }
