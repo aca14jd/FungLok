@@ -143,6 +143,11 @@ body {
         color: #4d79ff;
         cursor: default;
         transition: all 0.5s ease; }
+        body section#food .menu-heading:hover .fa-caret-down {
+          color: #4d79ff;
+          transition: all 0.5s ease; }
+    body section#food .fa-caret-down {
+      color: #aaaaaa; }
     body section#food .dropdown {
       justify-content: center;
       overflow: hidden; }

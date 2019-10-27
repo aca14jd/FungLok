@@ -87,7 +87,16 @@ body {
           color: $primary-color;
           cursor: default;
           @include ease0ut;
+
+          .fa-caret-down {
+            color: $primary-color;
+            @include ease0ut;
+          }
         }
+      }
+
+      .fa-caret-down {
+        color: rgb(170, 170, 170);
       }
 
       .dropdown {
