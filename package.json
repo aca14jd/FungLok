@@ -6,7 +6,7 @@
   "homepage": "https://funglok.netlify.com/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "master -d dist"
+    "build": "master -d dist"
   },
   "author": "Jason Diep",
   "license": "MIT",
