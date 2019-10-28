@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Fung Lok Restaurant",
   "main": "index.js",
-  "homepage": "https://funglok.netlify.com/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "build": "master -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Jason Diep",
   "license": "MIT",
