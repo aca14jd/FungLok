@@ -256,8 +256,10 @@ body {
   body .overlay {
     vertical-align: top;
     position: relative;
+    -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-position: 50%, 70%;
     background-position: 50%, 70%; }
   body .home {
     background-image: url(../img/home.jpg); }
