@@ -285,6 +285,8 @@ body {
     height: 1px;
     border: 0;
     background-color: DarkGrey; }
+  body button {
+    border-width: 0px; }
   body .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
