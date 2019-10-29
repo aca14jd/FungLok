@@ -285,11 +285,10 @@ body {
   .overlay {
     vertical-align: top;
     position: relative;
-    -webkit-background-size: cover;
+    -webkit-background-size: 100% 100%;
     background-size: cover;
     background-attachment: fixed; // Image position does not move even when scrolled
-    -webkit-background-position: 50%, 70%;
-    background-position: 50%, 70%; // Uses the center of the image
+    background-position: 70%, 50%; // Uses the center of the image
   }
 
   .home {
