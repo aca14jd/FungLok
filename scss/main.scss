@@ -82,6 +82,7 @@ body {
         margin: 0;
         text-transform: uppercase;
         background-color: darken($grey-color, $background-opacity);
+        vertical-align: middle;
 
         &:hover {
           color: $primary-color;
@@ -347,6 +348,12 @@ body {
 
   button {
     border-width: 0px;
+  }
+
+  .small {
+    font-size: 10px;
+    vertical-align: middle;
+    margin: 0 5px 0 5px;
   }
 
   // Google Maps
