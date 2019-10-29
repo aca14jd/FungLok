@@ -337,7 +337,7 @@ body {
   .grid-list {
     grid-template-columns: auto; }
   .overlay {
-    background-attachment: scroll; } }
+    background-attachment: scroll !important; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {
@@ -352,4 +352,4 @@ body {
   .grid-list {
     grid-template-columns: auto; }
   .overlay {
-    background-attachment: scroll; } }
+    background-attachment: scroll !important; } }
