@@ -102,23 +102,19 @@ body {
       .dropdown {
         justify-content: center;
         overflow: hidden;
-        
-        &:hover .product-bar {
-          transform: scale(1);
-          opacity: 1;
-
-        }
       }
 
       .product-bar {
         position: absolute;
         display: grid;
-        transform: scale(0);
-        opacity: 0;
-        transform-origin: 50% 0;
         @include ease0ut;
         width: 100%;
         background-color: rgba($grey-color, 0.9);
+        visibility: hidden;
+
+        &.show {
+          visibility: visible;
+        }
       }
 
       .category {
@@ -131,6 +127,10 @@ body {
         margin: 5px 10px 5px 10px;
         padding: 5px 5px 5px 5px;
         background-color: transparent;
+
+        &.show {
+          visibility: visible;
+        }
 
         &:hover {
           color: $primary-color;

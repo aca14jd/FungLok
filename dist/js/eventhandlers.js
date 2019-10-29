@@ -1,26 +1,35 @@
 // Menu Bar
 
 const menuBtn = document.querySelector(".menu-btn");
-const linkBtn = document.querySelectorAll(".nav-link");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
 
-let showMenu = false;
-
 menuBtn.addEventListener("click", toggleMenu);
-linkBtn.forEach(item => item.addEventListener("click", toggleMenu));
+navItems.forEach(item => item.addEventListener("click", toggleMenu));
 
 function toggleMenu() {
   menuBtn.classList.toggle("close");
-  linkBtn.forEach(item => item.classList.toggle("close"));
   menu.classList.toggle("show");
   menuNav.classList.toggle("show");
   navItems.forEach(item => item.classList.toggle("show"));
-  showMenu = !showMenu;
 }
 
 // Product Bar
+
+const dropdownBtn = document.querySelector(".dropdown");
+const product = document.querySelector(".product");
+const productBar = document.querySelector(".product-bar");
+const categoryBtn = document.querySelectorAll(".category-li");
+
+dropdownBtn.addEventListener("click", toggleProduct);
+categoryBtn.forEach(item => item.addEventListener("click", toggleProduct));
+
+function toggleProduct() {
+  product.classList.toggle("show");
+  productBar.classList.toggle("show");
+  categoryBtn.forEach(item => item.classList.toggle("show"));
+}
 
 var vegItem = document.getElementsByClassName("veg-item");
 var starterItem = document.getElementsByClassName("starter-item");

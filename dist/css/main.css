@@ -151,18 +151,15 @@ body {
     body section#food .dropdown {
       justify-content: center;
       overflow: hidden; }
-      body section#food .dropdown:hover .product-bar {
-        transform: scale(1);
-        opacity: 1; }
     body section#food .product-bar {
       position: absolute;
       display: grid;
-      transform: scale(0);
-      opacity: 0;
-      transform-origin: 50% 0;
       transition: all 0.5s ease;
       width: 100%;
-      background-color: rgba(61, 61, 61, 0.9); }
+      background-color: rgba(61, 61, 61, 0.9);
+      visibility: hidden; }
+      body section#food .product-bar.show {
+        visibility: visible; }
     body section#food .category {
       border: none;
       padding: 0;
@@ -173,6 +170,8 @@ body {
       margin: 5px 10px 5px 10px;
       padding: 5px 5px 5px 5px;
       background-color: transparent; }
+      body section#food .category.show {
+        visibility: visible; }
       body section#food .category:hover {
         color: #4d79ff;
         transition: all 0.5s ease;
