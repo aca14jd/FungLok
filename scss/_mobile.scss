@@ -59,6 +59,10 @@
   .grid-list {
     grid-template-columns: auto;
   }
+
+  .overlay {
+    background-attachment: scroll;
+  }
 }
 
 //Smartphones
@@ -79,5 +83,9 @@
 
   .grid-list {
     grid-template-columns: auto;
+  }
+
+  .overlay {
+    background-attachment: scroll;
   }
 }

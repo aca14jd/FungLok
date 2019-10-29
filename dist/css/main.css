@@ -256,7 +256,6 @@ body {
   body .overlay {
     vertical-align: top;
     position: relative;
-    -webkit-background-size: 100% 100%;
     background-size: cover;
     background-attachment: fixed;
     background-position: 70%, 50%; }
@@ -336,7 +335,9 @@ body {
   .product-bar {
     grid-template-columns: auto auto; }
   .grid-list {
-    grid-template-columns: auto; } }
+    grid-template-columns: auto; }
+  .overlay {
+    background-attachment: scroll; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {
@@ -349,4 +350,6 @@ body {
   .product-bar {
     grid-template-columns: auto; }
   .grid-list {
-    grid-template-columns: auto; } }
+    grid-template-columns: auto; }
+  .overlay {
+    background-attachment: scroll; } }
