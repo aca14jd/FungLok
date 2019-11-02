@@ -112,6 +112,7 @@ body {
         width: 100%;
         background-color: rgba($grey-color, 0.9);
         visibility: hidden;
+        z-index: 2;
 
         &.show {
           visibility: visible;
@@ -187,23 +188,21 @@ body {
         // Product Span
 
         .green {
-          color: DarkGreen;
+          color: rgb(0, 66, 0);
           font-weight: bold;
         }
 
-        .red {
-          color: rgb(161, 0, 0);
-          font-weight: bold;
-        }
-
-        .spicy {
+        .fa-pepper-hot {
           color: DarkRed;
           font-weight: bold;
         }
 
         .nut {
-          color: rgb(110, 84, 19);
-          font-weight: bold;
+          width: 16px;
+          height: 16px;
+          filter: invert(29%) sepia(74%) saturate(542%) hue-rotate(341deg) brightness(97%) contrast(92%);
+          position: relative;
+          z-index: 0;
         }
       }
     }
@@ -334,7 +333,6 @@ body {
   h5 {
     font-size: 16px;
     margin: 10px 10px 20px 10px;
-    color: rgb(184, 0, 0);
   }
 
   hr {
