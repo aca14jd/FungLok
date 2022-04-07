@@ -1,1124 +1,1243 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://kit.fontawesome.com/9dd8d9e3d3.js" crossorigin="anonymous"></script>
+        <title>Fung Lok | Chinese & Vietnamese Restaurant</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/main.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/9dd8d9e3d3.js" crossorigin="anonymous"></script>
-  <title>Fung Lok | Chinese & Vietnamese Restaurant</title>
-</head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="menu-overlay"></div>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-  <!-- Header -->
-  <header>
-    <div class="menu-overlay"></div>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <nav class="menu">
-      <ul class="menu-nav">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#food" class="nav-link">Food</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Home -->
+        <section id="home" class="overlay home">
+            <br />
+            <h1>Fung Lok</h1>
+            <h2>Chinese & Vietnamese Restaurant</h2>
+            <a href="#food" id="arrow"><i class="fas fa-chevron-circle-down"></i></a>
+        </section>
 
-  <!-- Home -->
-  <section id="home" class="overlay home">
-    <br />
-    <h1>Fung Lok</h1>
-    <h2>Chinese & Vietnamese Restaurant</h2>
-    <a href="#food" id="arrow"><i class="fas fa-chevron-circle-down"></i></a>
-  </section>
+        <!-- Food -->
+        <section id="food" class="overlay food">
+            <div class="dropdown">
+                <div class="menu-heading">Menu <i class="fa fa-caret-down"></i></div>
+                <div class="product-bar">
+                    <button class="category" id="vegs">Vegetarian</button>
+                    <button class="category" id="starters">Starters</button>
+                    <button class="category" id="mains">Main Dishes</button>
+                    <button class="category" id="sides">Sides & Specials</button>
+                    <button class="category" id="sets">Set Meals</button>
+                    <button class="category" id="desserts">Desserts</button>
+                    <button class="category" id="beverages">Beverages</button>
+                </div>
+            </div>
+            <div class="grid-list">
+                <!-- Vegetarian -->
+                <div class="veg-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
+                    <h4>Vegetarian Starters</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>1.</li>
+                        <li>Vegetarian Spring Rolls</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>2.</li>
+                        <li>Crispy Seaweed</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£3.50</li>
+                        <li>3.</li>
+                        <li>Vegetable Hot & Sour Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                        <li>4.</li>
+                        <li>Mixed Vegetable Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                        <li>5.</li>
+                        <li>Sweetcorn Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                    </ul>
+                </div>
+                <div class="veg-item">
+                    <h4 class="menu-category">Vegetarian Main Courses</h4>
+                    <h5>
+                        (All the following Vegetarian Main Courses do not include rice or chips
+                        unless stated)
+                    </h5>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>6.</li>
+                        <li>Braised Chinese Vegetables and Chinese Mushrooms in Oyster Sauce</li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.00</li>
+                        <li>7.</li>
+                        <li>Deep Fried Bean Curd with Vegetables and Chinese Mushrooms</li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.00</li>
+                        <li>8.</li>
+                        <li>Stir Fried Mixed Vegetables with Garlic or Oyster Sauce</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>9.</li>
+                        <li>Fried Vegetables with Cashewnuts <span class="nut">(N)</span></li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.50</li>
+                        <li>10.</li>
+                        <li>Fried Vegetables in Garlic & Chilli Sauce</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>11.</li>
+                        <li>Braised Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>12.</li>
+                        <li>Deep Fried Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>13.</li>
+                        <li>
+                            Stir Fried Bamboo Shoots & Water Chestnuts in Hot Bean Sauce
+                            <span class="nut">(N)</span>
+                        </li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>14.</li>
+                        <li>Stir Fried Beancurd in Kindo Sauce <span class="nut">(N)</span></li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>15.</li>
+                        <li>Deep Fried Salt & Peppered Bean Curd</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.00</li>
+                        <li>16.</li>
+                        <li>Vegetarian Singapore Vermicelli <span class="spicy">(Spicy)</span></li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.50</li>
+                        <li>17.</li>
+                        <li>Vegetable Chow Mein or Ho Fan</li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.00</li>
+                    </ul>
+                </div>
+                <!-- Starter -->
+                <div class="starter-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
+                    <h4>Soup</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>18.</li>
+                        <li>Chicken & Sweetcorn Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                        <li>19.</li>
+                        <li>Crab & Sweetcorn Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                        <li>20.</li>
+                        <li>Hot & Sour Soup</li>
+                        <li class="right">£3.00</li>
+                        <li class="right">£2.50</li>
+                        <li>21.</li>
+                        <li>Chicken & Mushroom Soup</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.50</li>
+                        <li>22.</li>
+                        <li>West Lake Soup <strong>(Minced Beef & Tomatoes)</strong></li>
+                        <li class="right">£3.00</li>
+                        <li class="right">£2.50</li>
+                        <li>23.</li>
+                        <li>Wanton Soup <strong>(Pork & King Prawn Dumpling)</strong></li>
+                        <li class="right">£5.50</li>
+                        <li class="right">£4.50</li>
+                        <li>24.</li>
+                        <li>Char Sui & Wanton Soup</li>
+                        <li class="right">£7.00</li>
+                        <li class="right">£5.50</li>
+                        <li>25.</li>
+                        <li>Wanton Noodle or Ho Fan Soup</li>
+                        <li class="right">£7.00</li>
+                        <li class="right">£5.50</li>
+                        <li>26.</li>
+                        <li>Char Sui & Wanton Noodle Soup</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.50</li>
+                        <li>27.</li>
+                        <li>Char Sui & Roast Duck Noodle Soup</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.50</li>
+                        <li>28.</li>
+                        <li>Seafood Soup</li>
+                        <li class="right">£6.50</li>
+                        <li class="right">£5.50</li>
+                        <li>29.</li>
+                        <li>Hot & Sour Seafood Soup <strong>(Vietnamese style)</strong></li>
+                        <li class="right">£6.50</li>
+                        <li class="right">£5.50</li>
+                        <li>30.</li>
+                        <li>
+                            Chicken or Beef with Rice Noodle Soup
+                            <strong>(Vietnamese style)</strong>
+                        </li>
+                        <li class="right">£7.00</li>
+                        <li class="right">£5.50</li>
+                        <li>31.</li>
+                        <li>Chicken Noodle Soup</li>
+                        <li class="right">£7.00</li>
+                        <li class="right">£5.50</li>
+                    </ul>
+                </div>
+                <div class="starter-item">
+                    <h4>Appetisers</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>33.</li>
+                        <li>
+                            Hot Combination <span class="red">(Min 2 persons 7 per head)</span>
+                            <strong
+                                >(Barbecued Ribs, Vietnamese Style Spring Rolls, Skewered Chicken on
+                                Skewer <span class="nut">(N)</span>, Sesame Seed Prawn on
+                                Toast)</strong
+                            >
+                        </li>
+                        <li class="right">£17.00</li>
+                        <li class="right">£14.50</li>
+                        <li>34.</li>
+                        <li>
+                            Dim Sum Combination <span class="red">(Min 2 persons 6 per head)</span>
+                            <strong>(Sui Mai, Ha Gau, Crispy Wantons, Spring Rolls)</strong>
+                        </li>
+                        <li class="right">£15.00</li>
+                        <li class="right">£12.00</li>
+                        <li>35.</li>
+                        <li>
+                            Quarter Crispy Duck <strong>(served with Pancakes, Trimmings)</strong>
+                        </li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£7.00</li>
+                        <li>36.</li>
+                        <li>BBQ, Kindo <span class="nut">(N)</span> or Salt & Pepper Ribs</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.30</li>
+                        <li>37.</li>
+                        <li>Salt & Pepper Chicken Wings</li>
+                        <li class="right">£7.50</li>
+                        <li class="right">£6.30</li>
+                        <li>39.</li>
+                        <li>Sesame Prawn on Toast</li>
+                        <li class="right">£5.80</li>
+                        <li class="right">£4.50</li>
+                        <li>41.</li>
+                        <li>Crispy Wantons with Sweet & Sour Sauce</li>
+                        <li class="right">£5.80</li>
+                        <li class="right">£4.50</li>
+                        <li>42.</li>
+                        <li>Sui Mai <strong>(4)</strong></li>
+                        <li class="right">£3.80</li>
+                        <li class="right">£3.00</li>
+                        <li>43.</li>
+                        <li>Salt & Pepper Sui Mai <strong>(4)</strong></li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>44.</li>
+                        <li>Ha Gau <strong>(4)</strong></li>
+                        <li class="right">£3.80</li>
+                        <li class="right">£3.00</li>
+                        <li>45.</li>
+                        <li>
+                            Skewered Chicken in Satay <span class="nut">(N)</span> or Black Bean
+                            Sauce <strong>(2)</strong>
+                        </li>
+                        <li class="right">£6.00</li>
+                        <li class="right">£5.00</li>
+                        <li>46.</li>
+                        <li>
+                            Skewered Seafood Mix in Satay <span class="nut">(N)</span> or Black Bean
+                            Sauce <strong>(2)</strong>
+                        </li>
+                        <li class="right">£12.00</li>
+                        <li class="right">£12.00</li>
+                        <li>47.</li>
+                        <li>Crispy King Prawn Spring Rolls</li>
+                        <li class="right">£5.50</li>
+                        <li class="right">£3.80</li>
+                        <li>48.</li>
+                        <li>Vietnamese Spring Rolls</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>49.</li>
+                        <li>Grilled Peking Dumplings <strong>(4)</strong></li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.80</li>
+                        <li>50.</li>
+                        <li>Prawn Cocktail</li>
+                        <li class="right">£5.50</li>
+                        <li class="right">£4.00</li>
+                        <li>51.</li>
+                        <li>Curry Samosas <strong>(4)</strong></li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>52.</li>
+                        <li>Char Sui Buns <strong>(2)</strong></li>
+                        <li class="right">£3.80</li>
+                        <li class="right">£3.00</li>
+                    </ul>
+                </div>
+                <!-- Mains -->
+                <!-- grid a -->
+                <div class="main-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
+                    <h5>
+                        The following dishes are only a recommendation from our chef. You the
+                        customer can choose any variety from our meat and seafood selection. The
+                        dishes with the choice of rice or chips are available for a supplement of £1
+                        except Fried Rice, Noodle and Ho Fan Dishes
+                    </h5>
+                    <h4>Duck Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>54.</li>
+                        <li>
+                            Deep Fried Aromatic Duck with Minced Prawn Stuffing in Straw Mushroom
+                            Sauce
+                        </li>
+                        <li class="right">£12.00</li>
+                        <li class="right">£9.50</li>
+                        <li>55.</li>
+                        <li>Deep Fried Aromatic Duck in Honey & Lemon Sauce</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>56.</li>
+                        <li>Deep Fried Aromatic Duck in Orange Sauce</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>57.</li>
+                        <li>Fried Sliced Duck with Green Peppers in Black Bean Sauce</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>58.</li>
+                        <li>Fried Sliced Duck with Ginger & Spring Onions</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>59.</li>
+                        <li>Fried Sliced Duck in Oyster Sauce</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>60.</li>
+                        <li>Roast Duck Cantonese Style</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                    </ul>
+                    <h4>Beef Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>61.</li>
+                        <li>Deep Fried Shredded Beef in Chilli Sauce</li>
+                        <li class="right">£10.00</li>
+                        <li class="right">£8.00</li>
+                        <li>62.</li>
+                        <li>Rib Eye Steak with Black Pepper Sauce</li>
+                        <li class="right">£16.00</li>
+                        <li class="right">£13.00</li>
+                        <li>63.</li>
+                        <li>Rib Eye Steak Cantonese Style <span class="nut">(N)</span></li>
+                        <li class="right">£16.00</li>
+                        <li class="right">£13.00</li>
+                        <li>64.</li>
+                        <li>Deep Fried Beef with Garlic & Chilli Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>65.</li>
+                        <li>Fried Beef with Green Peppers in Black Bean Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>66.</li>
+                        <li>Fried Beef in Oyster Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>67.</li>
+                        <li>Fried Beef with Cashewnuts <span class="nut">(N)</span></li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>68.</li>
+                        <li>Fried Beef in Satay Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>69.</li>
+                        <li>Fried Beef with Chinese Mushrooms</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>70.</li>
+                        <li>Fried Beef with Chinese Seasonal Vegetables</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>71.</li>
+                        <li>Sweet & Sour Beef</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>72.</li>
+                        <li>Fried Beef Szechuan Style <span class="spicy">(Spicy)</span></li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                    </ul>
+                    <h4>Chicken Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>73.</li>
+                        <li>Fried Chicken Fillet in Black Bean Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>74.</li>
+                        <li>Fried Chicken Fillet with Cashewnuts <span class="nut">(N)</span></li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>75.</li>
+                        <li>Fried Chicken Fillet in Kung Po Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>76.</li>
+                        <li>Fried Chicken Fillet with Ginger & Spring Onions</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>77.</li>
+                        <li>Fried Chicken Fillet with Green Peppers in Black Bean Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>78.</li>
+                        <li>Fried Chicken Fillet in Satay Sauce <span class="nut">(N)</span></li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>79.</li>
+                        <li>
+                            Fried Chicken Fillet Szechuan Style <span class="spicy">(Spicy)</span>
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>80.</li>
+                        <li>Fried Chicken Fillet with Chinese Mushrooms</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>81.</li>
+                        <li>Fried Chicken Fillet with Straw Mushrooms</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>82.</li>
+                        <li>Deep Fried Chicken Fillet in Sweet & Sour Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>83.</li>
+                        <li>Fried Chicken Fillet with Chinese Seasonal Vegetables</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>84.</li>
+                        <li>Deep Fried Chicken in Brown Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>85.</li>
+                        <li>Deep Fried Chicken in Garlic & Chilli Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>86.</li>
+                        <li>Deep Fried Salt & Pepper Chicken Pieces</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>87.</li>
+                        <li>Deep Fried Shredded Chicken in Chilli Sauce</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£7.00</li>
+                    </ul>
+                    <h4>Pork Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>88.</li>
+                        <li>Sweet & Sour Pork</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>89.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with
+                            Cashewnuts <span class="nut">(N)</span>
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>90.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Satay
+                            Sauce
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>91.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Oyster
+                            Sauce
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>92.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with
+                            Seasonal Vegetables
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>93.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Hot Bean
+                            Sauce
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>94.</li>
+                        <li>
+                            Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Green
+                            Peppers & Black Bean Sauce
+                        </li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>95.</li>
+                        <li>Deep Fried Pork with Garlic & Chilli Sauce</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                    </ul>
+                </div>
+                <!-- grid b -->
+                <div class="main-item">
+                    <h4>Seafood Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>96.</li>
+                        <li>Steamed Scallops & King Prawn with Hot Bean Sauce</li>
+                        <li class="right">£15.50</li>
+                        <li class="right">£11.00</li>
+                        <li>97.</li>
+                        <li>Steamed Sea Bass with Ginger & Spring Onions in Soya Sauce</li>
+                        <li class="right">Seasonal Price</li>
+                        <li class="right">Seasonal Price</li>
+                        <li>98.</li>
+                        <li>Steamed Sea Bass with Garlic & Black Bean Sauce</li>
+                        <li class="right">Seasonal Price</li>
+                        <li class="right">Seasonal Price</li>
+                        <li>104.</li>
+                        <li>Steamed King Prawns in Garlic, Hot Bean Sauce or Black Bean Sauce</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>105.</li>
+                        <li>Deep Fried King Prawns in Garlic & Chilli Sauce</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>106.</li>
+                        <li>Deep Fried King Prawns with Spring Onions in Batter</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>107.</li>
+                        <li>Sweet & Sour King Prawns</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>108.</li>
+                        <li>Fried King Prawns with Ginger & Spring Onions</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>109.</li>
+                        <li>Fried King Prawns with Green Pepper in Black Bean Sauce</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>110.</li>
+                        <li>Fried Squid with Green Pepper in Black Bean Sauce</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>111.</li>
+                        <li>Fried Squid with Ginger & Spring Onions</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>112.</li>
+                        <li>Deep Fried Salt & Pepper Squid</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>113.</li>
+                        <li>Deep Fried Squid with Garlic & Chilli Sauce</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>114.</li>
+                        <li>
+                            Quick Fried Seafood Mix with Cashewnuts <span class="nut">(N)</span>
+                        </li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                        <li>115.</li>
+                        <li>Quick Fried Seafood Mix with Seasonal Vegetables</li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                        <li>116.</li>
+                        <li>Fried Scallops with Ginger & Spring Onions</li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                        <li>117.</li>
+                        <li>Fried Scallops with Green Pepper in Black Bean Sauce</li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                        <li>118.</li>
+                        <li>Fried Scallops with Cashewnuts <span class="nut">(N)</span></li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                        <li>119.</li>
+                        <li>Sweet & Sour Fish</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                    </ul>
+                    <h4>Curry Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>120.</li>
+                        <li>Mixed Veg Curry</li>
+                        <li class="right">£8.00</li>
+                        <li class="right">£6.30</li>
+                        <li>121.</li>
+                        <li>Beef Curry</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>122.</li>
+                        <li>Chicken Curry</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>123.</li>
+                        <li>Prawn Curry</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>124.</li>
+                        <li>King Prawn Curry</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.10</li>
+                        <li>125.</li>
+                        <li>Special Curry</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£7.80</li>
+                        <li>126.</li>
+                        <li>Char Sui Curry</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                    </ul>
+                    <h4>Fried Rice Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>127.</li>
+                        <li>
+                            Special Fried Rice
+                            <strong>(Chicken, Beef, King Prawn, Char Sui & Vegetables)</strong>
+                        </li>
+                        <li class="right">£10.80</li>
+                        <li class="right">£8.50</li>
+                        <li>128.</li>
+                        <li>
+                            Vietnamese Style Fried Rice
+                            <strong>(King Prawn, Char Sui, Ham, Sweetcorn, Cucumber & Dill)</strong>
+                        </li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.50</li>
+                        <li>129.</li>
+                        <li>Chicken Fried Rice</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>130.</li>
+                        <li>Char Sui Fried Rice</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>131.</li>
+                        <li>Yung Chow Fried Rice</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                        <li>132.</li>
+                        <li>King Prawn Fried Rice</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.50</li>
+                        <li>133.</li>
+                        <li>Beef Fried Rice</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>134.</li>
+                        <li>Sliced Duck Fried Rice</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                    </ul>
+                    <h4>Noodle & Ho Fan Dishes</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>135.</li>
+                        <li>Special Chow Mein or Ho Fan</li>
+                        <li class="right">£10.80</li>
+                        <li class="right">£8.50</li>
+                        <li>136.</li>
+                        <li>King Prawn Chow Mein or Ho Fan</li>
+                        <li class="right">£10.30</li>
+                        <li class="right">£8.50</li>
+                        <li>137.</li>
+                        <li>Chicken Chow Mein or Ho Fan</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>138.</li>
+                        <li>Beef Chow Mein or Ho Fan</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.30</li>
+                        <li>139.</li>
+                        <li>
+                            Gon Chow Ngau
+                            <strong>(Cantonese Style - Dry Dish)(Dry Crispy Beef)</strong>
+                        </li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                        <li>140.</li>
+                        <li>Singapore Vermicelli or Ho Fan <span class="spicy">(Spicy)</span></li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                        <li>141.</li>
+                        <li>Mixed Seafood Chow Mein</li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                    </ul>
+                    <h4>English Dishes</h4>
+                    <h5>English dishes are served with Chips, Tomatoes & Mushrooms</h5>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>142.</li>
+                        <li>Grilled Black Peppered Sirloin Steak</li>
+                        <li class="right">£19.00</li>
+                        <li class="right">£15.00</li>
+                        <li>143.</li>
+                        <li>Grilled Black Peppered Rib Eye Steak</li>
+                        <li class="right">£19.00</li>
+                        <li class="right">£15.00</li>
+                        <li>144.</li>
+                        <li>Deep Fried Fish Steak</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                        <li>145.</li>
+                        <li>Roasted Spring Chicken</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£6.50</li>
+                        <li>146.</li>
+                        <li>Chicken Omelette</li>
+                        <li class="right">£9.00</li>
+                        <li class="right">£7.00</li>
+                        <li>147.</li>
+                        <li>Prawn Omelette</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>148.</li>
+                        <li>Spanish Omelette</li>
+                        <li class="right">£9.50</li>
+                        <li class="right">£7.50</li>
+                        <li>149.</li>
+                        <li>King Prawn Omelette</li>
+                        <li class="right">£11.00</li>
+                        <li class="right">£8.50</li>
+                        <li>150.</li>
+                        <li>Mushroom Omelette</li>
+                        <li class="right">£8.50</li>
+                        <li class="right">£6.50</li>
+                    </ul>
+                </div>
+                <!-- Sides -->
+                <div class="side-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
+                    <h4>Side Portions</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>151.</li>
+                        <li>Curry Sauce</li>
+                        <li class="right">£2.00</li>
+                        <li class="right">£1.50</li>
+                        <li>152.</li>
+                        <li>Sweet & Sour Sauce</li>
+                        <li class="right">£2.00</li>
+                        <li class="right">£1.50</li>
+                        <li>153.</li>
+                        <li>Garlic & Chilli Sauce</li>
+                        <li class="right">£2.00</li>
+                        <li class="right">£1.50</li>
+                        <li>154.</li>
+                        <li>Boiled Rice</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.00</li>
+                        <li>155.</li>
+                        <li>Chips</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.00</li>
+                        <li>156.</li>
+                        <li>Prawn Crackers</li>
+                        <li class="right">£2.80</li>
+                        <li class="right">£2.00</li>
+                        <li>157.</li>
+                        <li>Egg Fried Rice</li>
+                        <li class="right">£3.00</li>
+                        <li class="right">£2.20</li>
+                        <li>158.</li>
+                        <li>Onion Rings</li>
+                        <li class="right">£3.80</li>
+                        <li class="right">£3.00</li>
+                        <li>159.</li>
+                        <li>Beansprouts</li>
+                        <li class="right">£3.80</li>
+                        <li class="right">£3.00</li>
+                        <li>160.</li>
+                        <li>Chow Mein <strong>(Soft Noodles)</strong></li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>161.</li>
+                        <li>Mushrooms</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£3.50</li>
+                        <li>162.</li>
+                        <li>Ho Fan <strong>(Amoy Sauce)</strong></li>
+                        <li class="right">£6.00</li>
+                        <li class="right">£5.00</li>
+                        <li>163.</li>
+                        <li>Salt & Pepper Chips</li>
+                        <li class="right">£4.00</li>
+                        <li class="right">£3.00</li>
+                    </ul>
+                </div>
+                <div class="side-item">
+                    <h4>Special Mixed Dishes</h4>
+                    <h5>Three Delicious: King Prawn, Beef and Chicken</h5>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li>164.</li>
+                        <li>Three Delicious Kung Po Sauce</li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>165.</li>
+                        <li>Three Delicious Black Bean Sauce</li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>166.</li>
+                        <li>Three Delicious Ginger Spring Onion</li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>167.</li>
+                        <li>Three Delicious Satay Sauce <span class="nut">(N)</span></li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>168.</li>
+                        <li>Three Delicious Garlic & Chilli Sauce <strong>(Deep Fried)</strong></li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>169.</li>
+                        <li>
+                            Sweet & Sour Mixed
+                            <strong>(Deep Fried King Prawn, Chicken, Pork)</strong>
+                        </li>
+                        <li class="right">£9.80</li>
+                        <li class="right">£7.80</li>
+                        <li>170.</li>
+                        <li>
+                            Seafood Special with Kung Po Sauce
+                            <strong>(King Prawn, Scallop & Squid)</strong>
+                        </li>
+                        <li class="right">£12.50</li>
+                        <li class="right">£10.00</li>
+                    </ul>
+                </div>
+                <!-- Set Meals -->
+                <div class="set-item">
+                    <div class="grid-2">
+                        <div>
+                            <h5>Eat in prices may vary.</h5>
+                            <h5>
+                                Some meals may contain nuts <span class="nut">(N)</span> , if you
+                                suffer from food allergies, please speak to a member of our staff
+                            </h5>
+                        </div>
+                        <div>
+                            <h5 class="green right">For 2 Persons 1-2</h5>
+                            <h5 class="green right">For 3 Persons 1-3</h5>
+                            <h5 class="green right">For 4 Persons 1-4</h5>
+                        </div>
+                    </div>
+                    <h4>Set Meals</h4>
+                    <ul class="product-grid set-border">
+                        <li>A.</li>
+                        <div>
+                            <li><strong>Soup & Prawn Crackers</strong></li>
+                            <li>(Chicken or Crab & Sweetcorn Soup)</li>
+                            <li><strong>Appetisers</strong></li>
+                            <li>
+                                Curry Samosas with either BBQ, King Do
+                                <span class="nut">(N)</span> or Salt & Peppered Ribs
+                            </li>
+                            <li><strong>Main Course</strong></li>
+                            <li>1. Beef Green Pepper in Black Bean Sauce</li>
+                            <li>2. Sweet & Sour Pork</li>
+                            <li>3. Chicken with Cashewnuts <span class="nut">(N)</span></li>
+                            <li>4. Char Sui & Roast Duck with Beansprouts, Yung Chow Fried Rice</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Eat In Price</strong></li>
+                            <li class="right">£16.50 per person</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Takeaway Price</strong></li>
+                            <li class="right">£13.00 per person</li>
+                        </div>
+                    </ul>
+                    <ul class="product-grid set-border">
+                        <li>B.</li>
+                        <div>
+                            <li><strong>Soup & Prawn Crackers</strong></li>
+                            <li>(Chicken or Crab & Sweetcorn Soup)</li>
+                            <li><strong>Appetisers</strong></li>
+                            <li>
+                                Hot Combination (Ribs, Spring Rolls, Skewered Chicken, Prawn on
+                                Toast) OR Crispy Duck & Pancakes & Curry Samosas
+                            </li>
+                            <li><strong>Main Course</strong></li>
+                            <li>1. Chicken with Straw Mushrooms</li>
+                            <li>2. Beef Satay Sauce <span class="nut">(N)</span></li>
+                            <li>3. King Prawn with Ginger & Spring Onion</li>
+                            <li>4. Deep Fried Roast Duck in Orange Sauce, Yung Chow Fried Rice</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Eat In Price</strong></li>
+                            <li class="right">£20.00 per person</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Takeaway Price</strong></li>
+                            <li class="right">£16.50 per person</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="set-item">
+                    <ul class="product-grid set-border">
+                        <li>C.</li>
+                        <div>
+                            <li><strong>Soup & Prawn Crackers</strong></li>
+                            <li>
+                                (Chicken or Crab & Sweetcorn Soup, Hot & Sour Soup or Wanton Soup)
+                            </li>
+                            <li><strong>Appetisers</strong></li>
+                            <li>
+                                Hot Combination (Ribs, Spring Rolls, Skewered Chicken, Prawn on
+                                Toast) AND Crispy Duck & Pancakes
+                            </li>
+                            <li><strong>Main Course</strong></li>
+                            <li>1. Chicken with Chinese Mushrooms</li>
+                            <li>2. Ribeye Steak Cantonese Style <span class="nut">(N)</span></li>
+                            <li>3. Sweet & Sour King Prawn</li>
+                            <li>4. Char Sui in Hot Bean Sauce, Yung Chow Fried Rice</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Eat In Price</strong></li>
+                            <li class="right">£25.00 per person</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Takeaway Price</strong></li>
+                            <li class="right">£19.50 per person</li>
+                        </div>
+                    </ul>
+                    <ul class="product-grid set-border">
+                        <li>D.</li>
+                        <div>
+                            <h5 class="green">Vegetarian</h5>
+                            <li><strong>Soup & Prawn Crackers</strong></li>
+                            <li>(Sweetcorn, Mixed Vegetables or Hot & Sour Soup)</li>
+                            <li><strong>Appetisers</strong></li>
+                            <li>Crispy Spring Rolls & Seaweed</li>
+                            <li><strong>Main Course</strong></li>
+                            <li>1. Deep Fried Bean Curd in Sweet & Sour Sauce</li>
+                            <li>2. Mixed Vegetables in Black Bean Sauce</li>
+                            <li>3. Fried Broccoli with Garlic Sauce</li>
+                            <li>
+                                4. Chinese Mushrooms with Cashewnuts <span class="nut">(N)</span> ,
+                                Plain Fried Soft Noodles and Plain Fried Rice
+                            </li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Eat In Price</strong></li>
+                            <li class="right">£16.50 per person</li>
+                        </div>
+                        <div class="center">
+                            <li class="right"><strong>Takeaway Price</strong></li>
+                            <li class="right">£16.50 per person</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="dessert-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
+                    <h4>Desserts</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li></li>
+                        <li>Toffee Fruit (Apple, Banana or Pineapple)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Mixed Toffee Fruit</li>
+                        <li class="right">£5.00</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Fruit Fritter</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Cake of the Day</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Mixed Fruit with Ice Cream</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Banana Split</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Ice Cream Deluxe</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Jelly with Ice Cream</li>
+                        <li class="right">£3.50</li>
+                        <li class="right">£-.--</li>
+                    </ul>
+                </div>
 
-  <!-- Food -->
-  <section id="food" class="overlay food">
-    <div class="dropdown">
-      <div class="menu-heading">Menu <i class="fa fa-caret-down"></i>
-      </div>
-      <div class="product-bar">
-        <button class="category" id="vegs">Vegetarian</button>
-        <button class="category" id="starters">Starters</button>
-        <button class="category" id="mains">Main Dishes</button>
-        <button class="category" id="sides">Sides & Specials</button>
-        <button class="category" id="sets">Set Meals</button>
-        <button class="category" id="desserts">Desserts</button>
-        <button class="category" id="beverages">Beverages</button>
-      </div>
-    </div>
-    <div class="grid-list">
-      <!-- Vegetarian -->
-      <div class="veg-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
-        <h4>Vegetarian Starters</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>1.</li>
-          <li>Vegetarian Spring Rolls</li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>2.</li>
-          <li>Crispy Seaweed</li>
-          <li class="right">£3.50</li>
-          <li class="right">£3.50</li>
-          <li>3.</li>
-          <li>Vegetable Hot & Sour Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-          <li>4.</li>
-          <li>Mixed Vegetable Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-          <li>5.</li>
-          <li>Sweetcorn Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-        </ul>
-      </div>
-      <div class="veg-item">
-        <h4 class="menu-category">Vegetarian Main Courses</h4>
-        <h5>(All the following Vegetarian Main Courses do not include rice or chips unless stated)
-        </h5>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>6.</li>
-          <li>Braised Chinese Vegetables and Chinese Mushrooms in Oyster Sauce</li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.00</li>
-          <li>7.</li>
-          <li>Deep Fried Bean Curd with Vegetables and Chinese Mushrooms</li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.00</li>
-          <li>8.</li>
-          <li>Stir Fried Mixed Vegetables with Garlic or Oyster Sauce</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>9.</li>
-          <li>Fried Vegetables with Cashewnuts <span class="nut">(N)</span></li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.50</li>
-          <li>10.</li>
-          <li>Fried Vegetables in Garlic & Chilli Sauce</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>11.</li>
-          <li>Braised Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>12.</li>
-          <li>Deep Fried Bean Curd in Chilli & Garlic or Sweet & Sour Sauce</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>13.</li>
-          <li>Stir Fried Bamboo Shoots & Water Chestnuts in Hot Bean Sauce <span class="nut">(N)</span></li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>14.</li>
-          <li>Stir Fried Beancurd in Kindo Sauce <span class="nut">(N)</span></li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>15.</li>
-          <li>Deep Fried Salt & Peppered Bean Curd</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.00</li>
-          <li>16.</li>
-          <li>Vegetarian Singapore Vermicelli <span class="spicy">(Spicy)</span></li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.50</li>
-          <li>17.</li>
-          <li>Vegetable Chow Mein or Ho Fan</li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.00</li>
-        </ul>
-      </div>
-      <!-- Starter -->
-      <div class="starter-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
-        <h4>Soup</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>18.</li>
-          <li>Chicken & Sweetcorn Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-          <li>19.</li>
-          <li>Crab & Sweetcorn Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-          <li>20.</li>
-          <li>Hot & Sour Soup</li>
-          <li class="right">£3.00</li>
-          <li class="right">£2.50</li>
-          <li>21.</li>
-          <li>Chicken & Mushroom Soup</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.50</li>
-          <li>22.</li>
-          <li>West Lake Soup <strong>(Minced Beef & Tomatoes)</strong></li>
-          <li class="right">£3.00</li>
-          <li class="right">£2.50</li>
-          <li>23.</li>
-          <li>Wanton Soup <strong>(Pork & King Prawn Dumpling)</strong></li>
-          <li class="right">£5.50</li>
-          <li class="right">£4.50</li>
-          <li>24.</li>
-          <li>Char Sui & Wanton Soup</li>
-          <li class="right">£7.00</li>
-          <li class="right">£5.50</li>
-          <li>25.</li>
-          <li>Wanton Noodle or Ho Fan Soup</li>
-          <li class="right">£7.00</li>
-          <li class="right">£5.50</li>
-          <li>26.</li>
-          <li>Char Sui & Wanton Noodle Soup</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.50</li>
-          <li>27.</li>
-          <li>Char Sui & Roast Duck Noodle Soup</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.50</li>
-          <li>28.</li>
-          <li>Seafood Soup</li>
-          <li class="right">£6.50</li>
-          <li class="right">£5.50</li>
-          <li>29.</li>
-          <li>Hot & Sour Seafood Soup <strong>(Vietnamese style)</strong></li>
-          <li class="right">£6.50</li>
-          <li class="right">£5.50</li>
-          <li>30.</li>
-          <li>Chicken or Beef with Rice Noodle Soup <strong>(Vietnamese style)</strong></li>
-          <li class="right">£7.00</li>
-          <li class="right">£5.50</li>
-          <li>31.</li>
-          <li>Chicken Noodle Soup</li>
-          <li class="right">£7.00</li>
-          <li class="right">£5.50</li>
-        </ul>
-      </div>
-      <div class="starter-item">
-        <h4>Appetisers</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>33.</li>
-          <li>Hot Combination <span class="red">(Min 2 persons 7 per head)</span> <strong>(Barbecued Ribs, Vietnamese
-              Style Spring Rolls,
-              Skewered
-              Chicken on Skewer <span class="nut">(N)</span>, Sesame Seed Prawn on Toast)</strong></li>
-          <li class="right">£17.00</li>
-          <li class="right">£14.50</li>
-          <li>34.</li>
-          <li>Dim Sum Combination <span class="red">(Min 2 persons 6 per head)</span> <strong>(Sui Mai, Ha Gau, Crispy
-              Wantons, Spring Rolls)</strong></li>
-          <li class="right">£15.00</li>
-          <li class="right">£12.00</li>
-          <li>35.</li>
-          <li>Quarter Crispy Duck <strong>(served with Pancakes, Trimmings)</strong></li>
-          <li class="right">£9.00</li>
-          <li class="right">£7.00</li>
-          <li>36.</li>
-          <li>BBQ, Kindo <span class="nut">(N)</span> or Salt & Pepper Ribs</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.30</li>
-          <li>37.</li>
-          <li>Salt & Pepper Chicken Wings</li>
-          <li class="right">£7.50</li>
-          <li class="right">£6.30</li>
-          <li>39.</li>
-          <li>Sesame Prawn on Toast</li>
-          <li class="right">£5.80</li>
-          <li class="right">£4.50</li>
-          <li>41.</li>
-          <li>Crispy Wantons with Sweet & Sour Sauce</li>
-          <li class="right">£5.80</li>
-          <li class="right">£4.50</li>
-          <li>42.</li>
-          <li>Sui Mai <strong>(4)</strong></li>
-          <li class="right">£3.80</li>
-          <li class="right">£3.00</li>
-          <li>43.</li>
-          <li>Salt & Pepper Sui Mai <strong>(4)</strong></li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>44.</li>
-          <li>Ha Gau <strong>(4)</strong></li>
-          <li class="right">£3.80</li>
-          <li class="right">£3.00</li>
-          <li>45.</li>
-          <li>Skewered Chicken in Satay <span class="nut">(N)</span> or Black Bean Sauce <strong>(2)</strong></li>
-          <li class="right">£6.00</li>
-          <li class="right">£5.00</li>
-          <li>46.</li>
-          <li>Skewered Seafood Mix in Satay <span class="nut">(N)</span> or Black Bean Sauce <strong>(2)</strong></li>
-          <li class="right">£12.00</li>
-          <li class="right">£12.00</li>
-          <li>47.</li>
-          <li>Crispy King Prawn Spring Rolls</li>
-          <li class="right">£5.50</li>
-          <li class="right">£3.80</li>
-          <li>48.</li>
-          <li>Vietnamese Spring Rolls</li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>49.</li>
-          <li>Grilled Peking Dumplings <strong>(4)</strong></li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.80</li>
-          <li>50.</li>
-          <li>Prawn Cocktail</li>
-          <li class="right">£5.50</li>
-          <li class="right">£4.00</li>
-          <li>51.</li>
-          <li>Curry Samosas <strong>(4)</strong></li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>52.</li>
-          <li>Char Sui Buns <strong>(2)</strong></li>
-          <li class="right">£3.80</li>
-          <li class="right">£3.00</li>
-        </ul>
-      </div>
-      <!-- Mains -->
-      <!-- grid a -->
-      <div class="main-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
-        <h5>The following dishes are only a recommendation from our chef. You the customer can choose any variety from
-          our meat and seafood selection. The dishes with the choice of rice or chips are available for a supplement of
-          £1 except Fried Rice, Noodle and Ho Fan Dishes</h5>
-        <h4>Duck Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>54.</li>
-          <li>Deep Fried Aromatic Duck with Minced Prawn Stuffing in Straw Mushroom Sauce</li>
-          <li class="right">£12.00</li>
-          <li class="right">£9.50</li>
-          <li>55.</li>
-          <li>Deep Fried Aromatic Duck in Honey & Lemon Sauce</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>56.</li>
-          <li>Deep Fried Aromatic Duck in Orange Sauce</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>57.</li>
-          <li>Fried Sliced Duck with Green Peppers in Black Bean Sauce</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>58.</li>
-          <li>Fried Sliced Duck with Ginger & Spring Onions</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>59.</li>
-          <li>Fried Sliced Duck in Oyster Sauce</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>60.</li>
-          <li>Roast Duck Cantonese Style</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-        </ul>
-        <h4>Beef Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>61.</li>
-          <li>Deep Fried Shredded Beef in Chilli Sauce</li>
-          <li class="right">£10.00</li>
-          <li class="right">£8.00</li>
-          <li>62.</li>
-          <li>Rib Eye Steak with Black Pepper Sauce</li>
-          <li class="right">£16.00</li>
-          <li class="right">£13.00</li>
-          <li>63.</li>
-          <li>Rib Eye Steak Cantonese Style <span class="nut">(N)</span></li>
-          <li class="right">£16.00</li>
-          <li class="right">£13.00</li>
-          <li>64.</li>
-          <li>Deep Fried Beef with Garlic & Chilli Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>65.</li>
-          <li>Fried Beef with Green Peppers in Black Bean Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>66.</li>
-          <li>Fried Beef in Oyster Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>67.</li>
-          <li>Fried Beef with Cashewnuts <span class="nut">(N)</span></li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>68.</li>
-          <li>Fried Beef in Satay Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>69.</li>
-          <li>Fried Beef with Chinese Mushrooms</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>70.</li>
-          <li>Fried Beef with Chinese Seasonal Vegetables</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>71.</li>
-          <li>Sweet & Sour Beef</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>72.</li>
-          <li>Fried Beef Szechuan Style <span class="spicy">(Spicy)</span></li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-        </ul>
-        <h4>Chicken Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>73.</li>
-          <li>Fried Chicken Fillet in Black Bean Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>74.</li>
-          <li>Fried Chicken Fillet with Cashewnuts <span class="nut">(N)</span></li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>75.</li>
-          <li>Fried Chicken Fillet in Kung Po Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>76.</li>
-          <li>Fried Chicken Fillet with Ginger & Spring Onions</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>77.</li>
-          <li>Fried Chicken Fillet with Green Peppers in Black Bean Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>78.</li>
-          <li>Fried Chicken Fillet in Satay Sauce <span class="nut">(N)</span></li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>79.</li>
-          <li>Fried Chicken Fillet Szechuan Style <span class="spicy">(Spicy)</span></li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>80.</li>
-          <li>Fried Chicken Fillet with Chinese Mushrooms</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>81.</li>
-          <li>Fried Chicken Fillet with Straw Mushrooms</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>82.</li>
-          <li>Deep Fried Chicken Fillet in Sweet & Sour Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>83.</li>
-          <li>Fried Chicken Fillet with Chinese Seasonal Vegetables</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>84.</li>
-          <li>Deep Fried Chicken in Brown Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>85.</li>
-          <li>Deep Fried Chicken in Garlic & Chilli Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>86.</li>
-          <li>Deep Fried Salt & Pepper Chicken Pieces</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>87.</li>
-          <li>Deep Fried Shredded Chicken in Chilli Sauce</li>
-          <li class="right">£9.00</li>
-          <li class="right">£7.00</li>
-        </ul>
-        <h4>Pork Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>88.</li>
-          <li>Sweet & Sour Pork</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>89.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Cashewnuts <span class="nut">(N)</span>
-          </li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>90.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Satay Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>91.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Oyster Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>92.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Seasonal Vegetables</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>93.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> in Hot Bean Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>94.</li>
-          <li>Fried Sliced Char Sui <strong>(Chinese Roast Pork)</strong> with Green Peppers & Black Bean Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>95.</li>
-          <li>Deep Fried Pork with Garlic & Chilli Sauce</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-        </ul>
-      </div>
-      <!-- grid b -->
-      <div class="main-item">
-        <h4>Seafood Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>96.</li>
-          <li>Steamed Scallops & King Prawn with Hot Bean Sauce</li>
-          <li class="right">£15.50</li>
-          <li class="right">£11.00</li>
-          <li>97.</li>
-          <li>Steamed Sea Bass with Ginger & Spring Onions in Soya Sauce</li>
-          <li class="right">Seasonal Price</li>
-          <li class="right">Seasonal Price</li>
-          <li>98.</li>
-          <li>Steamed Sea Bass with Garlic & Black Bean Sauce</li>
-          <li class="right">Seasonal Price</li>
-          <li class="right">Seasonal Price</li>
-          <li>104.</li>
-          <li>Steamed King Prawns in Garlic, Hot Bean Sauce or Black Bean Sauce</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>105.</li>
-          <li>Deep Fried King Prawns in Garlic & Chilli Sauce</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>106.</li>
-          <li>Deep Fried King Prawns with Spring Onions in Batter</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>107.</li>
-          <li>Sweet & Sour King Prawns</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>108.</li>
-          <li>Fried King Prawns with Ginger & Spring Onions</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>109.</li>
-          <li>Fried King Prawns with Green Pepper in Black Bean Sauce</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>110.</li>
-          <li>Fried Squid with Green Pepper in Black Bean Sauce</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>111.</li>
-          <li>Fried Squid with Ginger & Spring Onions</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>112.</li>
-          <li>Deep Fried Salt & Pepper Squid</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>113.</li>
-          <li>Deep Fried Squid with Garlic & Chilli Sauce</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>114.</li>
-          <li>Quick Fried Seafood Mix with Cashewnuts <span class="nut">(N)</span></li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-          <li>115.</li>
-          <li>Quick Fried Seafood Mix with Seasonal Vegetables</li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-          <li>116.</li>
-          <li>Fried Scallops with Ginger & Spring Onions</li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-          <li>117.</li>
-          <li>Fried Scallops with Green Pepper in Black Bean Sauce</li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-          <li>118.</li>
-          <li>Fried Scallops with Cashewnuts <span class="nut">(N)</span></li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-          <li>119.</li>
-          <li>Sweet & Sour Fish</li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-        </ul>
-        <h4>Curry Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>120.</li>
-          <li>Mixed Veg Curry</li>
-          <li class="right">£8.00</li>
-          <li class="right">£6.30</li>
-          <li>121.</li>
-          <li>Beef Curry</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>122.</li>
-          <li>Chicken Curry</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>123.</li>
-          <li>Prawn Curry</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>124.</li>
-          <li>King Prawn Curry</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.10</li>
-          <li>125.</li>
-          <li>Special Curry</li>
-          <li class="right">£10.30</li>
-          <li class="right">£7.80</li>
-          <li>126.</li>
-          <li>Char Sui Curry</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-        </ul>
-        <h4>Fried Rice Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>127.</li>
-          <li>Special Fried Rice <strong>(Chicken, Beef, King Prawn, Char Sui & Vegetables)</strong></li>
-          <li class="right">£10.80</li>
-          <li class="right">£8.50</li>
-          <li>128.</li>
-          <li>Vietnamese Style Fried Rice <strong>(King Prawn, Char Sui, Ham, Sweetcorn, Cucumber & Dill)</strong></li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.50</li>
-          <li>129.</li>
-          <li>Chicken Fried Rice</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>130.</li>
-          <li>Char Sui Fried Rice</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>131.</li>
-          <li>Yung Chow Fried Rice</li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-          <li>132.</li>
-          <li>King Prawn Fried Rice</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.50</li>
-          <li>133.</li>
-          <li>Beef Fried Rice</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>134.</li>
-          <li>Sliced Duck Fried Rice</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-        </ul>
-        <h4>Noodle & Ho Fan Dishes</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>135.</li>
-          <li>Special Chow Mein or Ho Fan</li>
-          <li class="right">£10.80</li>
-          <li class="right">£8.50</li>
-          <li>136.</li>
-          <li>King Prawn Chow Mein or Ho Fan</li>
-          <li class="right">£10.30</li>
-          <li class="right">£8.50</li>
-          <li>137.</li>
-          <li>Chicken Chow Mein or Ho Fan</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>138.</li>
-          <li>Beef Chow Mein or Ho Fan</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.30</li>
-          <li>139.</li>
-          <li>Gon Chow Ngau <strong>(Cantonese Style - Dry Dish)(Dry Crispy Beef)</strong></li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-          <li>140.</li>
-          <li>Singapore Vermicelli or Ho Fan <span class="spicy">(Spicy)</span></li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-          <li>141.</li>
-          <li>Mixed Seafood Chow Mein</li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-        </ul>
-        <h4>English Dishes</h4>
-        <h5>English dishes are served with Chips, Tomatoes & Mushrooms</h5>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>142.</li>
-          <li>Grilled Black Peppered Sirloin Steak</li>
-          <li class="right">£19.00</li>
-          <li class="right">£15.00</li>
-          <li>143.</li>
-          <li>Grilled Black Peppered Rib Eye Steak</li>
-          <li class="right">£19.00</li>
-          <li class="right">£15.00</li>
-          <li>144.</li>
-          <li>Deep Fried Fish Steak</li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-          <li>145.</li>
-          <li>Roasted Spring Chicken</li>
-          <li class="right">£9.00</li>
-          <li class="right">£6.50</li>
-          <li>146.</li>
-          <li>Chicken Omelette</li>
-          <li class="right">£9.00</li>
-          <li class="right">£7.00</li>
-          <li>147.</li>
-          <li>Prawn Omelette</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>148.</li>
-          <li>Spanish Omelette</li>
-          <li class="right">£9.50</li>
-          <li class="right">£7.50</li>
-          <li>149.</li>
-          <li>King Prawn Omelette</li>
-          <li class="right">£11.00</li>
-          <li class="right">£8.50</li>
-          <li>150.</li>
-          <li>Mushroom Omelette</li>
-          <li class="right">£8.50</li>
-          <li class="right">£6.50</li>
-        </ul>
-      </div>
-      <!-- Sides -->
-      <div class="side-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
-        <h4>Side Portions</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>151.</li>
-          <li>Curry Sauce</li>
-          <li class="right">£2.00</li>
-          <li class="right">£1.50</li>
-          <li>152.</li>
-          <li>Sweet & Sour Sauce</li>
-          <li class="right">£2.00</li>
-          <li class="right">£1.50</li>
-          <li>153.</li>
-          <li>Garlic & Chilli Sauce</li>
-          <li class="right">£2.00</li>
-          <li class="right">£1.50</li>
-          <li>154.</li>
-          <li>Boiled Rice</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.00</li>
-          <li>155.</li>
-          <li>Chips</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.00</li>
-          <li>156.</li>
-          <li>Prawn Crackers</li>
-          <li class="right">£2.80</li>
-          <li class="right">£2.00</li>
-          <li>157.</li>
-          <li>Egg Fried Rice</li>
-          <li class="right">£3.00</li>
-          <li class="right">£2.20</li>
-          <li>158.</li>
-          <li>Onion Rings</li>
-          <li class="right">£3.80</li>
-          <li class="right">£3.00</li>
-          <li>159.</li>
-          <li>Beansprouts</li>
-          <li class="right">£3.80</li>
-          <li class="right">£3.00</li>
-          <li>160.</li>
-          <li>Chow Mein <strong>(Soft Noodles)</strong></li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>161.</li>
-          <li>Mushrooms</li>
-          <li class="right">£4.50</li>
-          <li class="right">£3.50</li>
-          <li>162.</li>
-          <li>Ho Fan <strong>(Amoy Sauce)</strong></li>
-          <li class="right">£6.00</li>
-          <li class="right">£5.00</li>
-          <li>163.</li>
-          <li>Salt & Pepper Chips</li>
-          <li class="right">£4.00</li>
-          <li class="right">£3.00</li>
-        </ul>
-      </div>
-      <div class="side-item">
-        <h4>Special Mixed Dishes</h4>
-        <h5>Three Delicious: King Prawn, Beef and Chicken</h5>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li>164.</li>
-          <li>Three Delicious Kung Po Sauce</li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>165.</li>
-          <li>Three Delicious Black Bean Sauce</li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>166.</li>
-          <li>Three Delicious Ginger Spring Onion</li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>167.</li>
-          <li>Three Delicious Satay Sauce <span class="nut">(N)</span></li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>168.</li>
-          <li>Three Delicious Garlic & Chilli Sauce <strong>(Deep Fried)</strong></li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>169.</li>
-          <li>Sweet & Sour Mixed <strong>(Deep Fried King Prawn, Chicken, Pork)</strong></li>
-          <li class="right">£9.80</li>
-          <li class="right">£7.80</li>
-          <li>170.</li>
-          <li>Seafood Special with Kung Po Sauce <strong>(King Prawn, Scallop & Squid)</strong></li>
-          <li class="right">£12.50</li>
-          <li class="right">£10.00</li>
-        </ul>
-      </div>
-      <!-- Set Meals -->
-      <div class="set-item">
-        <div class="grid-2">
-          <div>
-            <h5>Eat in prices may vary.</h5>
-            <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please
-              speak
-              to a member of our staff</h5>
-          </div>
-          <div>
-            <h5 class="green right">For 2 Persons 1-2</h5>
-            <h5 class="green right">For 3 Persons 1-3</h5>
-            <h5 class="green right">For 4 Persons 1-4</h5>
-          </div>
-        </div>
-        <h4>Set Meals</h4>
-        <ul class="product-grid set-border">
-          <li>A.</li>
-          <div>
-            <li><strong>Soup & Prawn Crackers</strong></li>
-            <li>(Chicken or Crab & Sweetcorn Soup)</li>
-            <li><strong>Appetisers</strong></li>
-            <li>Curry Samosas with either BBQ, King Do <span class="nut">(N)</span> or Salt & Peppered Ribs</li>
-            <li><strong>Main Course</strong></li>
-            <li>1. Beef Green Pepper in Black Bean Sauce</li>
-            <li>2. Sweet & Sour Pork</li>
-            <li>3. Chicken with Cashewnuts <span class="nut">(N)</span></li>
-            <li>4. Char Sui & Roast Duck with Beansprouts, Yung Chow Fried Rice</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Eat In Price</strong></li>
-            <li class="right">£16.50 per person</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Takeaway Price</strong></li>
-            <li class="right">£13.00 per person</li>
-          </div>
-        </ul>
-        <ul class="product-grid set-border">
-          <li>B.</li>
-          <div>
-            <li><strong>Soup & Prawn Crackers</strong></li>
-            <li>(Chicken or Crab & Sweetcorn Soup)</li>
-            <li><strong>Appetisers</strong></li>
-            <li>Hot Combination (Ribs, Spring Rolls, Skewered Chicken, Prawn on Toast) OR Crispy Duck & Pancakes & Curry
-              Samosas</li>
-            <li><strong>Main Course</strong></li>
-            <li>1. Chicken with Straw Mushrooms</li>
-            <li>2. Beef Satay Sauce <span class="nut">(N)</span></li>
-            <li>3. King Prawn with Ginger & Spring Onion</li>
-            <li>4. Deep Fried Roast Duck in Orange Sauce, Yung Chow Fried Rice</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Eat In Price</strong></li>
-            <li class="right">£20.00 per person</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Takeaway Price</strong></li>
-            <li class="right">£16.50 per person</li>
-          </div>
-        </ul>
-      </div>
-      <div class="set-item">
-        <ul class="product-grid set-border">
-          <li>C.</li>
-          <div>
-            <li><strong>Soup & Prawn Crackers</strong></li>
-            <li>(Chicken or Crab & Sweetcorn Soup, Hot & Sour Soup or Wanton Soup)</li>
-            <li><strong>Appetisers</strong></li>
-            <li>Hot Combination (Ribs, Spring Rolls, Skewered Chicken, Prawn on Toast) AND Crispy Duck & Pancakes</li>
-            <li><strong>Main Course</strong></li>
-            <li>1. Chicken with Chinese Mushrooms</li>
-            <li>2. Ribeye Steak Cantonese Style <span class="nut">(N)</span></li>
-            <li>3. Sweet & Sour King Prawn</li>
-            <li>4. Char Sui in Hot Bean Sauce, Yung Chow Fried Rice</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Eat In Price</strong></li>
-            <li class="right">£25.00 per person</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Takeaway Price</strong></li>
-            <li class="right">£19.50 per person</li>
-          </div>
-        </ul>
-        <ul class="product-grid set-border">
-          <li>D.</li>
-          <div>
-            <h5 class="green">Vegetarian</h5>
-            <li><strong>Soup & Prawn Crackers</strong></li>
-            <li>(Sweetcorn, Mixed Vegetables or Hot & Sour Soup)</li>
-            <li><strong>Appetisers</strong></li>
-            <li>Crispy Spring Rolls & Seaweed</li>
-            <li><strong>Main Course</strong></li>
-            <li>1. Deep Fried Bean Curd in Sweet & Sour Sauce</li>
-            <li>2. Mixed Vegetables in Black Bean Sauce</li>
-            <li>3. Fried Broccoli with Garlic Sauce</li>
-            <li>4. Chinese Mushrooms with Cashewnuts <span class="nut">(N)</span> , Plain Fried Soft Noodles and Plain
-              Fried Rice</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Eat In Price</strong></li>
-            <li class="right">£16.50 per person</li>
-          </div>
-          <div class="center">
-            <li class="right"><strong>Takeaway Price</strong></li>
-            <li class="right">£16.50 per person</li>
-          </div>
-        </ul>
-      </div>
-      <div class="dessert-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
-        <h4>Desserts</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li></li>
-          <li>Toffee Fruit (Apple, Banana or Pineapple)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Mixed Toffee Fruit</li>
-          <li class="right">£5.00</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Fruit Fritter</li>
-          <li class="right">£3.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Cake of the Day</li>
-          <li class="right">£3.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Mixed Fruit with Ice Cream</li>
-          <li class="right">£3.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Banana Split</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Ice Cream Deluxe</li>
-          <li class="right">£3.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Jelly with Ice Cream</li>
-          <li class="right">£3.50</li>
-          <li class="right">£-.--</li>
-        </ul>
-      </div>
+                <div class="beverage-item">
+                    <h5>Eat in prices may vary.</h5>
+                    <h5>
+                        Some meals may contain nuts <span class="nut">(N)</span> , if you suffer
+                        from food allergies, please speak to a member of our staff
+                    </h5>
 
-      <div class="beverage-item">
-        <h5>Eat in prices may vary.</h5>
-        <h5>Some meals may contain nuts <span class="nut">(N)</span> , if you suffer from food allergies, please speak
-          to a member of our staff</h5>
+                    <h4>Beverages</h4>
+                    <ul class="product-grid">
+                        <li></li>
+                        <li></li>
+                        <li class="right"><strong>Eat In Price</strong></li>
+                        <li class="right"><strong>Takeaway Price</strong></li>
+                        <li></li>
+                        <li>Gaelic Coffee (Scottish Whisky)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Irish Coffee (Irish Whisky)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Royal Coffee (Brandy)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Jamaican Coffee (Rum)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Calypso Coffee (Tia Maria)</li>
+                        <li class="right">£4.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Floating Coffee</li>
+                        <li class="right">£3.00</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Cappuccino</li>
+                        <li class="right">£3.00</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Coffee</li>
+                        <li class="right">£1.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Tea</li>
+                        <li class="right">£1.50</li>
+                        <li class="right">£-.--</li>
+                        <li></li>
+                        <li>Chinese Tea</li>
+                        <li class="right">£1.50</li>
+                        <li class="right">£-.--</li>
+                    </ul>
+                    <h5>
+                        Not all drinks are listed; more soft drinks, juice, water, spirits are
+                        available.
+                    </h5>
+                </div>
+            </div>
+            <br />
+        </section>
 
-        <h4>Beverages</h4>
-        <ul class="product-grid">
-          <li></li>
-          <li></li>
-          <li class="right"><strong>Eat In Price</strong></li>
-          <li class="right"><strong>Takeaway Price</strong></li>
-          <li></li>
-          <li>Gaelic Coffee (Scottish Whisky)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Irish Coffee (Irish Whisky)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Royal Coffee (Brandy)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Jamaican Coffee (Rum)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Calypso Coffee (Tia Maria)</li>
-          <li class="right">£4.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Floating Coffee</li>
-          <li class="right">£3.00</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Cappuccino</li>
-          <li class="right">£3.00</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Coffee</li>
-          <li class="right">£1.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Tea</li>
-          <li class="right">£1.50</li>
-          <li class="right">£-.--</li>
-          <li></li>
-          <li>Chinese Tea</li>
-          <li class="right">£1.50</li>
-          <li class="right">£-.--</li>
-        </ul>
-        <h5>Not all drinks are listed; more soft drinks, juice, water, spirits are available.</h5>
-      </div>
+        <!-- Contact -->
+        <section id="contact" class="overlay contact">
+            <br />
+            <div class="grid-list">
+                <div class="contact-bg">
+                    <h4 class="contact-heading">About</h4>
+                    <p class="contact-text">
+                        Fung Lok is an authentic Chinese & Vietnamese Restaurant which sets a calm
+                        and quiet atmosphere well suited for business meetings or for a casual meal.
+                    </p>
+                    <p class="contact-text">
+                        The atmosphere is welcoming and friendly in which you are able to relax and
+                        enjoy a delicious meal in a Chinese & Vietnamese background.
+                    </p>
+                    <p class="contact-text">
+                        The decor pays homage to the ethnic Chinese background yet holds a balance
+                        with modern Western design.
+                    </p>
+                    <p class="contact-text">
+                        The small vibrant blue bar adds to the modern design with its Chinese beers
+                        and Western beverages.
+                    </p>
+                    <p class="contact-text">
+                        The staff are more than happy to help you have a relaxing and enjoyable
+                        experience when dining.
+                    </p>
+                    <p class="contact-text">
+                        There are lunch specials available when eating in which allows for a casual
+                        dine for a cheaper price.
+                    </p>
+                    <p class="contact-text">
+                        There is a fine selection of wine, spirits and other alcoholic and
+                        non-alcoholic beverages to compliment the hearty Asian food.
+                    </p>
+                    <p class="contact-text">
+                        The restaurant is vegetarian-friendly with its dedicated wide selection of
+                        vegetarian starters and mains.
+                    </p>
+                    <p class="contact-text">
+                        The restaurant is also child-friendly with a children's menu available when
+                        eating in and there are plentiful amounts of high chairs for small children.
+                    </p>
+                    <p class="contact-text">
+                        Tables are usually available without much wait but if you would like to make
+                        sure you have a table ready for you immediately, please make reservations by
+                        contacting us.
+                    </p>
 
-    </div>
-    <br>
-  </section>
+                    <a
+                        href="https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d2628894-Reviews-Fung_Lok-Liverpool_Merseyside_England.html"
+                        ><i class="fab fa-tripadvisor"></i
+                    ></a>
+                    <a href="https://www.facebook.com/pages/Fung-Lok/159970840687090"
+                        ><i class="fab fa-facebook"></i
+                    ></a>
+                </div>
+                <div class="contact-bg">
+                    <h4 class="contact-heading">Contact & Location</h4>
+                    <p class="contact-text location"><strong>Opening Hours</strong></p>
+                    <p class="contact-text location">Monday 1.00pm - 10.00pm</p>
+                    <p class="contact-text location">Tuesday CLOSED</p>
+                    <p class="contact-text location">Wednesday 1.00pm - 10.00pm</p>
+                    <p class="contact-text location">Thursday 1.00pm - 10.00pm</p>
+                    <p class="contact-text location">Friday 1.00pm - 11.00pm</p>
+                    <p class="contact-text location">Saturday 1.00pm - 11.30pm</p>
+                    <p class="contact-text location">Sunday & Bank Holidays 1.00pm - 10.30pm</p>
+                    <hr />
+                    <p class="contact-text location">TEL: 0151 722 9560</p>
+                    <hr />
+                    <p class="contact-text location">55 Allerton Road</p>
+                    <p class="contact-text location">Liverpool</p>
+                    <p class="contact-text location">L18 2DA</p>
+                    <hr />
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.5416658320933!2d-2.911685384160005!3d53.38724977998756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2039f8b8094b%3A0xd603d5e2d29726c7!2sFung%20Lok%20Chinese%20Vietnamese%20Restaurant!5e0!3m2!1sen!2suk!4v1571417207056!5m2!1sen!2suk"
+                            width="600"
+                            height="450"
+                            frameborder="0"
+                            style="border: 0"
+                            allowfullscreen=""
+                            title="Fung Lok map location"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>Copyright &copy; 2019, Website design and content is created by Jason Diep</footer>
 
-  <!-- Contact -->
-  <section id="contact" class="overlay contact">
-    <br />
-    <div class="grid-list">
-      <div class="contact-bg">
-        <h4 class="contact-heading">About</h4>
-        <p class="contact-text">Fung Lok is an authentic Chinese & Vietnamese Restaurant which sets a calm and quiet
-          atmosphere well suited for business meetings or for a casual meal.</p>
-        <p class="contact-text">The atmosphere is welcoming and friendly in which you are able to relax and enjoy a
-          delicious meal in a Chinese & Vietnamese background.</p>
-        <p class="contact-text">The decor pays homage to the ethnic Chinese background yet holds a balance with modern
-          Western design.</p>
-        <p class="contact-text">The small vibrant blue bar adds to the modern design with its Chinese beers and Western
-          beverages.</p>
-        <p class="contact-text">The staff are more than happy to help you have a relaxing and enjoyable experience
-          when dining.</p>
-        <p class="contact-text">There are lunch specials available when eating in which allows for a casual dine for a
-          cheaper price.</p>
-        <p class="contact-text">There is a fine selection of wine, spirits and other alcoholic and non-alcoholic
-          beverages to compliment the hearty Asian food.</p>
-        <p class="contact-text">The restaurant is vegetarian-friendly with its dedicated wide selection of vegetarian
-          starters and mains.</p>
-        <p class="contact-text">The restaurant is also child-friendly with a children's menu available when eating in
-          and there are plentiful amounts of high chairs for small children.</p>
-        <p class="contact-text">Tables are usually available without much wait but if you would like to make sure you
-          have a table ready for you immediately, please make reservations by contacting us.</p>
-
-
-        <a
-          href="https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d2628894-Reviews-Fung_Lok-Liverpool_Merseyside_England.html"><i
-            class="fab fa-tripadvisor"></i></a>
-        <a href="https://www.facebook.com/pages/Fung-Lok/159970840687090"><i class="fab fa-facebook"></i></a>
-      </div>
-      <div class="contact-bg">
-        <h4 class="contact-heading">Contact & Location</h4>
-        <p class="contact-text location"><strong>Opening Hours</strong></p>
-        <p class="contact-text location">Monday to Thursday 1.00pm - 10.30pm</p>
-        <p class="contact-text location">Friday 1.00pm - 11.00pm</p>
-        <p class="contact-text location">Saturday 1.00pm - 11.30pm</p>
-        <p class="contact-text location">Sunday & Bank Holidays 1.00pm - 10.30pm</p>
-        <hr>
-        <p class="contact-text location">TEL: 0151 722 9560</p>
-        <hr>
-        <p class="contact-text location">55 Allerton Road</p>
-        <p class="contact-text location">Liverpool</p>
-        <p class="contact-text location">L18 2DA</p>
-        <hr>
-        <div class="map-responsive">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.5416658320933!2d-2.911685384160005!3d53.38724977998756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2039f8b8094b%3A0xd603d5e2d29726c7!2sFung%20Lok%20Chinese%20Vietnamese%20Restaurant!5e0!3m2!1sen!2suk!4v1571417207056!5m2!1sen!2suk"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-            title="Fung Lok map location"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>Copyright &copy; 2019, Website design and content is created by Jason Diep</footer>
-
-  <script src="js/eventhandlers.js"></script>
-</body>
-
+        <script src="js/eventhandlers.js"></script>
+    </body>
 </html>
